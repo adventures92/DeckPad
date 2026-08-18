@@ -20,8 +20,11 @@
 //  - Continuous controls are 14-bit: MSB on CC n, LSB on CC n+0x20.
 //  - Jog platter/rim are 64-centered relative CCs; the browse encoder is
 //    two's-complement relative (1 = +1, 127 = −1).
-//  - SHIFT-variant numbers marked "provisional" come from the Mixxx
-//    reference and await Pass B capture confirmation.
+//  - SHIFT-variant numbers captured in Pass B (2026-08-18) — every
+//    reference-sourced value confirmed, plus captured-only additions the
+//    community map lacks (load/beat/smart SHIFT variants, fader-start).
+//  - CUE/LOOP CALL ◀/▶ numbers are provisional (reference) until their
+//    targeted capture completes.
 //
 //  Endpoint identity confirmed (M1): name "DDJ-FLX4",
 //  manufacturer "AlphaTheta Corporation", model "DDJ-FLX4".
@@ -186,7 +189,19 @@ final class DDJFLX4Descriptor: DeviceDescriptor {
             note(ch, 0x36, "\(d).jogTouch", deck: deck)
             note(ch, 0x54, "mixer.ch\(deck + 1).cue", deck: deck)
 
-            // Provisional SHIFT variants (pending Pass B)
+            // CUE/LOOP CALL ◀/▶ — provisional (reference), targeted capture pending
+            note(ch, 0x51, "\(d).cueLoopLeft", deck: deck)
+            note(ch, 0x53, "\(d).cueLoopRight", deck: deck)
+            note(ch, 0x3E, "\(d).cueLoopLeft", shift: true, deck: deck)
+            note(ch, 0x3D, "\(d).cueLoopRight", shift: true, deck: deck)
+
+            // Firmware auxiliary triggers (captured Pass B): SHIFT + fader
+            // movement emits dedicated fader-start notes. Decoded but not in
+            // the physical inventory; mappability decided in M3/M4.
+            note(ch, 0x52, "\(d).faderStart", deck: deck)
+            note(ch, 0x66, "\(d).xfaderStart", deck: deck)
+
+            // SHIFT variants (captured Pass B 2026-08-18)
             note(ch, 0x0E, "\(d).play", shift: true, deck: deck)
             note(ch, 0x48, "\(d).cue", shift: true, deck: deck)
             note(ch, 0x60, "\(d).sync", shift: true, deck: deck)
@@ -235,10 +250,12 @@ final class DDJFLX4Descriptor: DeviceDescriptor {
         note(4, 0x11, "fx.chSelect")
         note(5, 0x10, "fx.chSelect")
         note(5, 0x11, "fx.chSelect")
-        // Provisional SHIFT variants (pending Pass B)
+        // SHIFT variants (captured Pass B 2026-08-18)
         note(4, 0x64, "fx.select", shift: true)
         note(4, 0x43, "fx.onOff", shift: true)
         note(5, 0x43, "fx.onOff", shift: true)
+        note(4, 0x66, "fx.beatLeft", shift: true)    // captured; not in community map
+        note(4, 0x6B, "fx.beatRight", shift: true)   // captured; not in community map
         msb[Key(channel: 4, number: 0x02)] = (ControlID("fx.levelDepth"), nil)
 
         // Browser + master section (captured): ch 6.
@@ -247,11 +264,16 @@ final class DDJFLX4Descriptor: DeviceDescriptor {
         note(6, 0x47, "browser.load2")
         note(6, 0x00, "mixer.smartCX")
         note(6, 0x01, "mixer.smartFader")
-        note(6, 0x42, "browser.encoderPress", shift: true)   // provisional
+        // SHIFT variants (captured Pass B 2026-08-18; load/smart not in community map)
+        note(6, 0x42, "browser.encoderPress", shift: true)
+        note(6, 0x68, "browser.load1", shift: true)
+        note(6, 0x7A, "browser.load2", shift: true)
+        note(6, 0x08, "mixer.smartCX", shift: true)
+        note(6, 0x09, "mixer.smartFader", shift: true)
         relative[Key(channel: 6, number: 0x40)] = RelativeMapping(
             id: ControlID("browser.encoder"), encoding: .twosComplement, forcedShift: false, deckScope: nil, jogDeck: nil
         )
-        relative[Key(channel: 6, number: 0x64)] = RelativeMapping(  // provisional
+        relative[Key(channel: 6, number: 0x64)] = RelativeMapping(  // captured Pass B
             id: ControlID("browser.encoder"), encoding: .twosComplement, forcedShift: true, deckScope: nil, jogDeck: nil
         )
         msb[Key(channel: 6, number: 0x08)] = (ControlID("mixer.masterLevel"), nil)
@@ -289,6 +311,8 @@ final class DDJFLX4Descriptor: DeviceDescriptor {
                 ControlSpec(id: ControlID("\(d).loopIn"), kind: .button, section: s, name: "Loop In / 4Beat"),
                 ControlSpec(id: ControlID("\(d).loopOut"), kind: .button, section: s, name: "Loop Out"),
                 ControlSpec(id: ControlID("\(d).reloopExit"), kind: .button, section: s, name: "Reloop/Exit"),
+                ControlSpec(id: ControlID("\(d).cueLoopLeft"), kind: .button, section: s, name: "Cue/Loop Call ◀"),
+                ControlSpec(id: ControlID("\(d).cueLoopRight"), kind: .button, section: s, name: "Cue/Loop Call ▶"),
                 ControlSpec(id: ControlID("\(d).tempo"), kind: .slider, section: s, name: "Tempo Slider"),
                 ControlSpec(id: ControlID("\(d).jogTouch"), kind: .button, section: s, name: "Jog Touch"),
                 ControlSpec(id: ControlID("\(d).jog"), kind: .jog, section: s, name: "Jog Turn (platter)"),

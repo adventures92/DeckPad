@@ -1,2080 +1,4248 @@
 {
-  "capturedAt" : "2026-08-18T10:37:28Z",
-  "device" : "DDJ-FLX4",
-  "endpointManufacturer" : "AlphaTheta Corporation",
-  "endpointName" : "DDJ-FLX4",
-  "entries" : [
+  "capturedAt": "2026-08-18T11:06:33Z",
+  "device": "DDJ-FLX4",
+  "endpointManufacturer": "AlphaTheta Corporation",
+  "endpointName": "DDJ-FLX4",
+  "entries": [
     {
-      "control" : "browser.encoder",
-      "observations" : [
+      "control": "browser.encoder",
+      "observations": [
         {
-          "channel" : 6,
-          "count" : 48,
-          "firstValue" : 1,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 1,
-          "number" : 64,
-          "type" : "cc"
+          "channel": 6,
+          "count": 48,
+          "firstValue": 1,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 1,
+          "number": 64,
+          "type": "cc"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
-    },
-    {
-      "control" : "browser.encoderPress",
-      "observations" : [
-        {
-          "channel" : 6,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 65,
-          "type" : "noteOff"
+      "pass": "base",
+      "skipped": false
+    },
+    {
+      "control": "browser.encoderPress",
+      "observations": [
+        {
+          "channel": 6,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 65,
+          "type": "noteOff"
         },
         {
-          "channel" : 6,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 65,
-          "type" : "noteOn"
+          "channel": 6,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 65,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
-    {
-      "control" : "browser.load1",
-      "observations" : [
-        {
-          "channel" : 6,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 70,
-          "type" : "noteOff"
-        },
-        {
-          "channel" : 6,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 70,
-          "type" : "noteOn"
-        }
-      ],
-      "pass" : "base",
-      "skipped" : false
-    },
-    {
-      "control" : "browser.load2",
-      "observations" : [
+    {
+      "control": "browser.load1",
+      "observations": [
+        {
+          "channel": 6,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 70,
+          "type": "noteOff"
+        },
+        {
+          "channel": 6,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 70,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "base",
+      "skipped": false
+    },
+    {
+      "control": "browser.load2",
+      "observations": [
         {
-          "channel" : 6,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 71,
-          "type" : "noteOff"
-        },
-        {
-          "channel" : 6,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 71,
-          "type" : "noteOn"
+          "channel": 6,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 71,
+          "type": "noteOff"
+        },
+        {
+          "channel": 6,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 71,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck1.cue",
-      "observations" : [
-        {
-          "channel" : 0,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 12,
-          "type" : "noteOff"
-        },
-        {
-          "channel" : 0,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 12,
-          "type" : "noteOn"
-        }
-      ],
-      "pass" : "base",
-      "skipped" : false
-    },
-    {
-      "control" : "deck1.jog",
-      "observations" : [
-        {
-          "channel" : 0,
-          "count" : 114,
-          "firstValue" : 65,
-          "lastValue" : 65,
-          "maxValue" : 67,
-          "minValue" : 65,
-          "number" : 33,
-          "type" : "cc"
+      "control": "deck1.cue",
+      "observations": [
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 12,
+          "type": "noteOff"
+        },
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 12,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "base",
+      "skipped": false
+    },
+    {
+      "control": "deck1.jog",
+      "observations": [
+        {
+          "channel": 0,
+          "count": 114,
+          "firstValue": 65,
+          "lastValue": 65,
+          "maxValue": 67,
+          "minValue": 65,
+          "number": 33,
+          "type": "cc"
         },
         {
-          "channel" : 0,
-          "count" : 289,
-          "firstValue" : 65,
-          "lastValue" : 65,
-          "maxValue" : 66,
-          "minValue" : 65,
-          "number" : 34,
-          "type" : "cc"
-        },
-        {
-          "channel" : 0,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 54,
-          "type" : "noteOff"
-        },
-        {
-          "channel" : 0,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 54,
-          "type" : "noteOn"
+          "channel": 0,
+          "count": 289,
+          "firstValue": 65,
+          "lastValue": 65,
+          "maxValue": 66,
+          "minValue": 65,
+          "number": 34,
+          "type": "cc"
+        },
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 54,
+          "type": "noteOff"
+        },
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 54,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
-    {
-      "control" : "deck1.jogSide",
-      "observations" : [
-        {
-          "channel" : 0,
-          "count" : 205,
-          "firstValue" : 63,
-          "lastValue" : 63,
-          "maxValue" : 63,
-          "minValue" : 62,
-          "number" : 33,
-          "type" : "cc"
-        }
-      ],
-      "pass" : "base",
-      "skipped" : false
-    },
-    {
-      "control" : "deck1.jogTouch",
-      "observations" : [
+    {
+      "control": "deck1.jogSide",
+      "observations": [
+        {
+          "channel": 0,
+          "count": 205,
+          "firstValue": 63,
+          "lastValue": 63,
+          "maxValue": 63,
+          "minValue": 62,
+          "number": 33,
+          "type": "cc"
+        }
+      ],
+      "pass": "base",
+      "skipped": false
+    },
+    {
+      "control": "deck1.jogTouch",
+      "observations": [
         {
-          "channel" : 0,
-          "count" : 4,
-          "firstValue" : 63,
-          "lastValue" : 63,
-          "maxValue" : 63,
-          "minValue" : 63,
-          "number" : 33,
-          "type" : "cc"
-        },
-        {
-          "channel" : 0,
-          "count" : 11,
-          "firstValue" : 65,
-          "lastValue" : 63,
-          "maxValue" : 65,
-          "minValue" : 63,
-          "number" : 34,
-          "type" : "cc"
-        },
-        {
-          "channel" : 0,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 54,
-          "type" : "noteOff"
+          "channel": 0,
+          "count": 4,
+          "firstValue": 63,
+          "lastValue": 63,
+          "maxValue": 63,
+          "minValue": 63,
+          "number": 33,
+          "type": "cc"
+        },
+        {
+          "channel": 0,
+          "count": 11,
+          "firstValue": 65,
+          "lastValue": 63,
+          "maxValue": 65,
+          "minValue": 63,
+          "number": 34,
+          "type": "cc"
+        },
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 54,
+          "type": "noteOff"
         },
         {
-          "channel" : 0,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 54,
-          "type" : "noteOn"
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 54,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
-    {
-      "control" : "deck1.loopIn",
-      "observations" : [
-        {
-          "channel" : 0,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 16,
-          "type" : "noteOff"
+    {
+      "control": "deck1.loopIn",
+      "observations": [
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 16,
+          "type": "noteOff"
         },
         {
-          "channel" : 0,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 16,
-          "type" : "noteOn"
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 16,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck1.loopOut",
-      "observations" : [
-        {
-          "channel" : 0,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 17,
-          "type" : "noteOff"
+      "control": "deck1.loopOut",
+      "observations": [
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 17,
+          "type": "noteOff"
         },
         {
-          "channel" : 0,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 17,
-          "type" : "noteOn"
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 17,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck1.pad1",
-      "observations" : [
-        {
-          "channel" : 7,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 48,
-          "type" : "noteOff"
+      "control": "deck1.pad1",
+      "observations": [
+        {
+          "channel": 7,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 48,
+          "type": "noteOff"
         },
         {
-          "channel" : 7,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 48,
-          "type" : "noteOn"
+          "channel": 7,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 48,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck1.pad2",
-      "observations" : [
-        {
-          "channel" : 7,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 49,
-          "type" : "noteOff"
+      "control": "deck1.pad2",
+      "observations": [
+        {
+          "channel": 7,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 49,
+          "type": "noteOff"
         },
         {
-          "channel" : 7,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 49,
-          "type" : "noteOn"
+          "channel": 7,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 49,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck1.pad3",
-      "observations" : [
+      "control": "deck1.pad3",
+      "observations": [
         {
-          "channel" : 7,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 50,
-          "type" : "noteOff"
+          "channel": 7,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 50,
+          "type": "noteOff"
         },
         {
-          "channel" : 7,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 50,
-          "type" : "noteOn"
+          "channel": 7,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 50,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck1.pad4",
-      "observations" : [
+      "control": "deck1.pad4",
+      "observations": [
         {
-          "channel" : 7,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 51,
-          "type" : "noteOff"
+          "channel": 7,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 51,
+          "type": "noteOff"
         },
         {
-          "channel" : 7,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 51,
-          "type" : "noteOn"
+          "channel": 7,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 51,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck1.pad5",
-      "observations" : [
+      "control": "deck1.pad5",
+      "observations": [
         {
-          "channel" : 7,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 52,
-          "type" : "noteOff"
+          "channel": 7,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 52,
+          "type": "noteOff"
         },
         {
-          "channel" : 7,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 52,
-          "type" : "noteOn"
+          "channel": 7,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 52,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck1.pad6",
-      "observations" : [
+      "control": "deck1.pad6",
+      "observations": [
         {
-          "channel" : 7,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 53,
-          "type" : "noteOff"
+          "channel": 7,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 53,
+          "type": "noteOff"
         },
         {
-          "channel" : 7,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 53,
-          "type" : "noteOn"
+          "channel": 7,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 53,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck1.pad7",
-      "observations" : [
+      "control": "deck1.pad7",
+      "observations": [
         {
-          "channel" : 7,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 54,
-          "type" : "noteOff"
+          "channel": 7,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 54,
+          "type": "noteOff"
         },
         {
-          "channel" : 7,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 54,
-          "type" : "noteOn"
+          "channel": 7,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 54,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck1.pad8",
-      "observations" : [
+      "control": "deck1.pad8",
+      "observations": [
         {
-          "channel" : 7,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 55,
-          "type" : "noteOff"
+          "channel": 7,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 55,
+          "type": "noteOff"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck1.padModeBeatJump",
-      "observations" : [
+      "control": "deck1.padModeBeatJump",
+      "observations": [
         {
-          "channel" : 0,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 32,
-          "type" : "noteOff"
+          "channel": 0,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 32,
+          "type": "noteOff"
         },
         {
-          "channel" : 0,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 32,
-          "type" : "noteOn"
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 32,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck1.padModeHotCue",
-      "observations" : [
+      "control": "deck1.padModeHotCue",
+      "observations": [
         {
-          "channel" : 0,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 27,
-          "type" : "noteOff"
+          "channel": 0,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 27,
+          "type": "noteOff"
         },
         {
-          "channel" : 0,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 27,
-          "type" : "noteOn"
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 27,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck1.padModePadFX",
-      "observations" : [
+      "control": "deck1.padModePadFX",
+      "observations": [
         {
-          "channel" : 0,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 30,
-          "type" : "noteOff"
+          "channel": 0,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 30,
+          "type": "noteOff"
         },
         {
-          "channel" : 0,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 30,
-          "type" : "noteOn"
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 30,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck1.padModeSampler",
-      "observations" : [
+      "control": "deck1.padModeSampler",
+      "observations": [
         {
-          "channel" : 0,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 34,
-          "type" : "noteOff"
+          "channel": 0,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 34,
+          "type": "noteOff"
         },
         {
-          "channel" : 0,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 34,
-          "type" : "noteOn"
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 34,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck1.play",
-      "observations" : [
+      "control": "deck1.play",
+      "observations": [
         {
-          "channel" : 0,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 11,
-          "type" : "noteOff"
+          "channel": 0,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 11,
+          "type": "noteOff"
         },
         {
-          "channel" : 0,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 11,
-          "type" : "noteOn"
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 11,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck1.reloopExit",
-      "observations" : [
+      "control": "deck1.reloopExit",
+      "observations": [
         {
-          "channel" : 0,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 77,
-          "type" : "noteOff"
+          "channel": 0,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 77,
+          "type": "noteOff"
         },
         {
-          "channel" : 0,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 77,
-          "type" : "noteOn"
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 77,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck1.shift",
-      "observations" : [
+      "control": "deck1.shift",
+      "observations": [
         {
-          "channel" : 0,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 63,
-          "type" : "noteOff"
+          "channel": 0,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 63,
+          "type": "noteOff"
         },
         {
-          "channel" : 0,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 63,
-          "type" : "noteOn"
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 63,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck1.sync",
-      "observations" : [
+      "control": "deck1.sync",
+      "observations": [
         {
-          "channel" : 0,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 88,
-          "type" : "noteOff"
+          "channel": 0,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 88,
+          "type": "noteOff"
         },
         {
-          "channel" : 0,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 88,
-          "type" : "noteOn"
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 88,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck1.tempo",
-      "observations" : [
+      "control": "deck1.tempo",
+      "observations": [
         {
-          "channel" : 0,
-          "count" : 107,
-          "firstValue" : 127,
-          "lastValue" : 0,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 0,
-          "type" : "cc"
+          "channel": 0,
+          "count": 107,
+          "firstValue": 127,
+          "lastValue": 0,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 0,
+          "type": "cc"
         },
         {
-          "channel" : 0,
-          "count" : 107,
-          "firstValue" : 88,
-          "lastValue" : 0,
-          "maxValue" : 123,
-          "minValue" : 0,
-          "number" : 32,
-          "type" : "cc"
+          "channel": 0,
+          "count": 107,
+          "firstValue": 88,
+          "lastValue": 0,
+          "maxValue": 123,
+          "minValue": 0,
+          "number": 32,
+          "type": "cc"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck2.cue",
-      "observations" : [
+      "control": "deck2.cue",
+      "observations": [
         {
-          "channel" : 1,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 12,
-          "type" : "noteOff"
+          "channel": 1,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 12,
+          "type": "noteOff"
         },
         {
-          "channel" : 1,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 12,
-          "type" : "noteOn"
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 12,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck2.jog",
-      "observations" : [
+      "control": "deck2.jog",
+      "observations": [
         {
-          "channel" : 1,
-          "count" : 86,
-          "firstValue" : 63,
-          "lastValue" : 63,
-          "maxValue" : 63,
-          "minValue" : 62,
-          "number" : 33,
-          "type" : "cc"
+          "channel": 1,
+          "count": 86,
+          "firstValue": 63,
+          "lastValue": 63,
+          "maxValue": 63,
+          "minValue": 62,
+          "number": 33,
+          "type": "cc"
         },
         {
-          "channel" : 1,
-          "count" : 172,
-          "firstValue" : 63,
-          "lastValue" : 63,
-          "maxValue" : 63,
-          "minValue" : 62,
-          "number" : 34,
-          "type" : "cc"
+          "channel": 1,
+          "count": 172,
+          "firstValue": 63,
+          "lastValue": 63,
+          "maxValue": 63,
+          "minValue": 62,
+          "number": 34,
+          "type": "cc"
         },
         {
-          "channel" : 1,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 54,
-          "type" : "noteOff"
+          "channel": 1,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 54,
+          "type": "noteOff"
         },
         {
-          "channel" : 1,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 54,
-          "type" : "noteOn"
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 54,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck2.jogSide",
-      "observations" : [
+      "control": "deck2.jogSide",
+      "observations": [
         {
-          "channel" : 1,
-          "count" : 238,
-          "firstValue" : 63,
-          "lastValue" : 63,
-          "maxValue" : 63,
-          "minValue" : 62,
-          "number" : 33,
-          "type" : "cc"
+          "channel": 1,
+          "count": 238,
+          "firstValue": 63,
+          "lastValue": 63,
+          "maxValue": 63,
+          "minValue": 62,
+          "number": 33,
+          "type": "cc"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck2.jogTouch",
-      "observations" : [
+      "control": "deck2.jogTouch",
+      "observations": [
         {
-          "channel" : 1,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 54,
-          "type" : "noteOff"
+          "channel": 1,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 54,
+          "type": "noteOff"
         },
         {
-          "channel" : 1,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 54,
-          "type" : "noteOn"
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 54,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck2.loopIn",
-      "observations" : [
+      "control": "deck2.loopIn",
+      "observations": [
         {
-          "channel" : 1,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 16,
-          "type" : "noteOff"
+          "channel": 1,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 16,
+          "type": "noteOff"
         },
         {
-          "channel" : 1,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 16,
-          "type" : "noteOn"
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 16,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck2.loopOut",
-      "observations" : [
+      "control": "deck2.loopOut",
+      "observations": [
         {
-          "channel" : 1,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 17,
-          "type" : "noteOff"
+          "channel": 1,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 17,
+          "type": "noteOff"
         },
         {
-          "channel" : 1,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 17,
-          "type" : "noteOn"
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 17,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck2.pad1",
-      "observations" : [
+      "control": "deck2.pad1",
+      "observations": [
         {
-          "channel" : 9,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 48,
-          "type" : "noteOff"
+          "channel": 9,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 48,
+          "type": "noteOff"
         },
         {
-          "channel" : 9,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 48,
-          "type" : "noteOn"
+          "channel": 9,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 48,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck2.pad2",
-      "observations" : [
+      "control": "deck2.pad2",
+      "observations": [
         {
-          "channel" : 9,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 49,
-          "type" : "noteOff"
+          "channel": 9,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 49,
+          "type": "noteOff"
         },
         {
-          "channel" : 9,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 49,
-          "type" : "noteOn"
+          "channel": 9,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 49,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck2.pad3",
-      "observations" : [
+      "control": "deck2.pad3",
+      "observations": [
         {
-          "channel" : 9,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 50,
-          "type" : "noteOff"
+          "channel": 9,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 50,
+          "type": "noteOff"
         },
         {
-          "channel" : 9,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 50,
-          "type" : "noteOn"
+          "channel": 9,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 50,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck2.pad4",
-      "observations" : [
+      "control": "deck2.pad4",
+      "observations": [
         {
-          "channel" : 9,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 51,
-          "type" : "noteOff"
+          "channel": 9,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 51,
+          "type": "noteOff"
         },
         {
-          "channel" : 9,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 51,
-          "type" : "noteOn"
+          "channel": 9,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 51,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck2.pad5",
-      "observations" : [
+      "control": "deck2.pad5",
+      "observations": [
         {
-          "channel" : 9,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 52,
-          "type" : "noteOff"
+          "channel": 9,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 52,
+          "type": "noteOff"
         },
         {
-          "channel" : 9,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 52,
-          "type" : "noteOn"
+          "channel": 9,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 52,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck2.pad6",
-      "observations" : [
+      "control": "deck2.pad6",
+      "observations": [
         {
-          "channel" : 9,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 53,
-          "type" : "noteOff"
+          "channel": 9,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 53,
+          "type": "noteOff"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck2.pad7",
-      "observations" : [
+      "control": "deck2.pad7",
+      "observations": [
         {
-          "channel" : 9,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 54,
-          "type" : "noteOff"
+          "channel": 9,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 54,
+          "type": "noteOff"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck2.pad8",
-      "observations" : [
+      "control": "deck2.pad8",
+      "observations": [
         {
-          "channel" : 9,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 55,
-          "type" : "noteOff"
+          "channel": 9,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 55,
+          "type": "noteOff"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck2.padModeBeatJump",
-      "observations" : [
+      "control": "deck2.padModeBeatJump",
+      "observations": [
         {
-          "channel" : 1,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 32,
-          "type" : "noteOff"
+          "channel": 1,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 32,
+          "type": "noteOff"
         },
         {
-          "channel" : 1,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 32,
-          "type" : "noteOn"
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 32,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck2.padModeHotCue",
-      "observations" : [
+      "control": "deck2.padModeHotCue",
+      "observations": [
         {
-          "channel" : 1,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 27,
-          "type" : "noteOff"
+          "channel": 1,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 27,
+          "type": "noteOff"
         },
         {
-          "channel" : 1,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 27,
-          "type" : "noteOn"
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 27,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck2.padModePadFX",
-      "observations" : [
+      "control": "deck2.padModePadFX",
+      "observations": [
         {
-          "channel" : 1,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 30,
-          "type" : "noteOff"
+          "channel": 1,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 30,
+          "type": "noteOff"
         },
         {
-          "channel" : 1,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 30,
-          "type" : "noteOn"
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 30,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck2.padModeSampler",
-      "observations" : [
+      "control": "deck2.padModeSampler",
+      "observations": [
         {
-          "channel" : 1,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 34,
-          "type" : "noteOff"
+          "channel": 1,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 34,
+          "type": "noteOff"
         },
         {
-          "channel" : 1,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 34,
-          "type" : "noteOn"
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 34,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck2.play",
-      "observations" : [
+      "control": "deck2.play",
+      "observations": [
         {
-          "channel" : 1,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 11,
-          "type" : "noteOff"
+          "channel": 1,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 11,
+          "type": "noteOff"
         },
         {
-          "channel" : 1,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 11,
-          "type" : "noteOn"
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 11,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck2.reloopExit",
-      "observations" : [
+      "control": "deck2.reloopExit",
+      "observations": [
         {
-          "channel" : 1,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 77,
-          "type" : "noteOff"
+          "channel": 1,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 77,
+          "type": "noteOff"
         },
         {
-          "channel" : 1,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 77,
-          "type" : "noteOn"
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 77,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck2.shift",
-      "observations" : [
+      "control": "deck2.shift",
+      "observations": [
         {
-          "channel" : 1,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 63,
-          "type" : "noteOff"
+          "channel": 1,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 63,
+          "type": "noteOff"
         },
         {
-          "channel" : 1,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 63,
-          "type" : "noteOn"
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 63,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck2.sync",
-      "observations" : [
+      "control": "deck2.sync",
+      "observations": [
         {
-          "channel" : 1,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 88,
-          "type" : "noteOff"
+          "channel": 1,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 88,
+          "type": "noteOff"
         },
         {
-          "channel" : 1,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 88,
-          "type" : "noteOn"
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 88,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "deck2.tempo",
-      "observations" : [
+      "control": "deck2.tempo",
+      "observations": [
         {
-          "channel" : 1,
-          "count" : 48,
-          "firstValue" : 127,
-          "lastValue" : 0,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 0,
-          "type" : "cc"
+          "channel": 1,
+          "count": 48,
+          "firstValue": 127,
+          "lastValue": 0,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 0,
+          "type": "cc"
         },
         {
-          "channel" : 1,
-          "count" : 48,
-          "firstValue" : 9,
-          "lastValue" : 0,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 32,
-          "type" : "cc"
+          "channel": 1,
+          "count": 48,
+          "firstValue": 9,
+          "lastValue": 0,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 32,
+          "type": "cc"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "fx.beatLeft",
-      "observations" : [
+      "control": "fx.beatLeft",
+      "observations": [
         {
-          "channel" : 4,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 74,
-          "type" : "noteOff"
+          "channel": 4,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 74,
+          "type": "noteOff"
         },
         {
-          "channel" : 4,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 74,
-          "type" : "noteOn"
+          "channel": 4,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 74,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "fx.beatRight",
-      "observations" : [
+      "control": "fx.beatRight",
+      "observations": [
         {
-          "channel" : 4,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 75,
-          "type" : "noteOff"
+          "channel": 4,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 75,
+          "type": "noteOff"
         },
         {
-          "channel" : 4,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 75,
-          "type" : "noteOn"
+          "channel": 4,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 75,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "fx.chSelect",
-      "observations" : [
+      "control": "fx.chSelect",
+      "observations": [
         {
-          "channel" : 4,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 16,
-          "type" : "noteOff"
+          "channel": 4,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 16,
+          "type": "noteOff"
         },
         {
-          "channel" : 4,
-          "count" : 2,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 17,
-          "type" : "noteOff"
+          "channel": 4,
+          "count": 2,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 17,
+          "type": "noteOff"
         },
         {
-          "channel" : 5,
-          "count" : 2,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 16,
-          "type" : "noteOff"
+          "channel": 5,
+          "count": 2,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 16,
+          "type": "noteOff"
         },
         {
-          "channel" : 4,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 16,
-          "type" : "noteOn"
+          "channel": 4,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 16,
+          "type": "noteOn"
         },
         {
-          "channel" : 5,
-          "count" : 2,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 17,
-          "type" : "noteOn"
+          "channel": 5,
+          "count": 2,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 17,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "fx.levelDepth",
-      "observations" : [
+      "control": "fx.levelDepth",
+      "observations": [
         {
-          "channel" : 4,
-          "count" : 43,
-          "firstValue" : 63,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 2,
-          "type" : "cc"
+          "channel": 4,
+          "count": 43,
+          "firstValue": 63,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 2,
+          "type": "cc"
         },
         {
-          "channel" : 4,
-          "count" : 43,
-          "firstValue" : 110,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 34,
-          "type" : "cc"
+          "channel": 4,
+          "count": 43,
+          "firstValue": 110,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 34,
+          "type": "cc"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "fx.onOff",
-      "observations" : [
+      "control": "fx.onOff",
+      "observations": [
         {
-          "channel" : 4,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 71,
-          "type" : "noteOff"
+          "channel": 4,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 71,
+          "type": "noteOff"
         },
         {
-          "channel" : 4,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 71,
-          "type" : "noteOn"
+          "channel": 4,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 71,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "fx.select",
-      "observations" : [
+      "control": "fx.select",
+      "observations": [
         {
-          "channel" : 4,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 99,
-          "type" : "noteOff"
+          "channel": 4,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 99,
+          "type": "noteOff"
         },
         {
-          "channel" : 4,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 99,
-          "type" : "noteOn"
+          "channel": 4,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 99,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "mixer.ch1.cfx",
-      "observations" : [
+      "control": "mixer.ch1.cfx",
+      "observations": [
         {
-          "channel" : 6,
-          "count" : 68,
-          "firstValue" : 1,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 1,
-          "number" : 23,
-          "type" : "cc"
+          "channel": 6,
+          "count": 68,
+          "firstValue": 1,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 1,
+          "number": 23,
+          "type": "cc"
         },
         {
-          "channel" : 6,
-          "count" : 68,
-          "firstValue" : 60,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 55,
-          "type" : "cc"
+          "channel": 6,
+          "count": 68,
+          "firstValue": 60,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 55,
+          "type": "cc"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "mixer.ch1.cue",
-      "observations" : [
+      "control": "mixer.ch1.cue",
+      "observations": [
         {
-          "channel" : 0,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 84,
-          "type" : "noteOff"
+          "channel": 0,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 84,
+          "type": "noteOff"
         },
         {
-          "channel" : 0,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 84,
-          "type" : "noteOn"
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 84,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "mixer.ch1.eqHi",
-      "observations" : [
+      "control": "mixer.ch1.eqHi",
+      "observations": [
         {
-          "channel" : 0,
-          "count" : 62,
-          "firstValue" : 0,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 7,
-          "type" : "cc"
+          "channel": 0,
+          "count": 62,
+          "firstValue": 0,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 7,
+          "type": "cc"
         },
         {
-          "channel" : 0,
-          "count" : 62,
-          "firstValue" : 68,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 39,
-          "type" : "cc"
+          "channel": 0,
+          "count": 62,
+          "firstValue": 68,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 39,
+          "type": "cc"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "mixer.ch1.eqLow",
-      "observations" : [
+      "control": "mixer.ch1.eqLow",
+      "observations": [
         {
-          "channel" : 0,
-          "count" : 67,
-          "firstValue" : 1,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 1,
-          "number" : 15,
-          "type" : "cc"
+          "channel": 0,
+          "count": 67,
+          "firstValue": 1,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 1,
+          "number": 15,
+          "type": "cc"
         },
         {
-          "channel" : 0,
-          "count" : 67,
-          "firstValue" : 60,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 47,
-          "type" : "cc"
+          "channel": 0,
+          "count": 67,
+          "firstValue": 60,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 47,
+          "type": "cc"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "mixer.ch1.eqMid",
-      "observations" : [
+      "control": "mixer.ch1.eqMid",
+      "observations": [
         {
-          "channel" : 0,
-          "count" : 59,
-          "firstValue" : 0,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 11,
-          "type" : "cc"
+          "channel": 0,
+          "count": 59,
+          "firstValue": 0,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 11,
+          "type": "cc"
         },
         {
-          "channel" : 0,
-          "count" : 59,
-          "firstValue" : 102,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 43,
-          "type" : "cc"
+          "channel": 0,
+          "count": 59,
+          "firstValue": 102,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 43,
+          "type": "cc"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "mixer.ch1.fader",
-      "observations" : [
+      "control": "mixer.ch1.fader",
+      "observations": [
         {
-          "channel" : 0,
-          "count" : 121,
-          "firstValue" : 125,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 19,
-          "type" : "cc"
+          "channel": 0,
+          "count": 121,
+          "firstValue": 125,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 19,
+          "type": "cc"
         },
         {
-          "channel" : 0,
-          "count" : 121,
-          "firstValue" : 33,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 51,
-          "type" : "cc"
+          "channel": 0,
+          "count": 121,
+          "firstValue": 33,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 51,
+          "type": "cc"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "mixer.ch1.trim",
-      "observations" : [
+      "control": "mixer.ch1.trim",
+      "observations": [
         {
-          "channel" : 0,
-          "count" : 124,
-          "firstValue" : 0,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 4,
-          "type" : "cc"
+          "channel": 0,
+          "count": 124,
+          "firstValue": 0,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 4,
+          "type": "cc"
         },
         {
-          "channel" : 0,
-          "count" : 124,
-          "firstValue" : 33,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 36,
-          "type" : "cc"
+          "channel": 0,
+          "count": 124,
+          "firstValue": 33,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 36,
+          "type": "cc"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "mixer.ch2.cfx",
-      "observations" : [
+      "control": "mixer.ch2.cfx",
+      "observations": [
         {
-          "channel" : 6,
-          "count" : 43,
-          "firstValue" : 63,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 24,
-          "type" : "cc"
+          "channel": 6,
+          "count": 43,
+          "firstValue": 63,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 24,
+          "type": "cc"
         },
         {
-          "channel" : 6,
-          "count" : 43,
-          "firstValue" : 76,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 56,
-          "type" : "cc"
+          "channel": 6,
+          "count": 43,
+          "firstValue": 76,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 56,
+          "type": "cc"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "mixer.ch2.cue",
-      "observations" : [
+      "control": "mixer.ch2.cue",
+      "observations": [
         {
-          "channel" : 1,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 84,
-          "type" : "noteOff"
+          "channel": 1,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 84,
+          "type": "noteOff"
         },
         {
-          "channel" : 1,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 84,
-          "type" : "noteOn"
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 84,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "mixer.ch2.eqHi",
-      "observations" : [
+      "control": "mixer.ch2.eqHi",
+      "observations": [
         {
-          "channel" : 1,
-          "count" : 52,
-          "firstValue" : 59,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 7,
-          "type" : "cc"
+          "channel": 1,
+          "count": 52,
+          "firstValue": 59,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 7,
+          "type": "cc"
         },
         {
-          "channel" : 1,
-          "count" : 52,
-          "firstValue" : 23,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 39,
-          "type" : "cc"
+          "channel": 1,
+          "count": 52,
+          "firstValue": 23,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 39,
+          "type": "cc"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "mixer.ch2.eqLow",
-      "observations" : [
+      "control": "mixer.ch2.eqLow",
+      "observations": [
         {
-          "channel" : 1,
-          "count" : 56,
-          "firstValue" : 61,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 15,
-          "type" : "cc"
+          "channel": 1,
+          "count": 56,
+          "firstValue": 61,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 15,
+          "type": "cc"
         },
         {
-          "channel" : 1,
-          "count" : 56,
-          "firstValue" : 6,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 47,
-          "type" : "cc"
+          "channel": 1,
+          "count": 56,
+          "firstValue": 6,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 47,
+          "type": "cc"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "mixer.ch2.eqMid",
-      "observations" : [
+      "control": "mixer.ch2.eqMid",
+      "observations": [
         {
-          "channel" : 1,
-          "count" : 64,
-          "firstValue" : 63,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 11,
-          "type" : "cc"
+          "channel": 1,
+          "count": 64,
+          "firstValue": 63,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 11,
+          "type": "cc"
         },
         {
-          "channel" : 1,
-          "count" : 64,
-          "firstValue" : 110,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 43,
-          "type" : "cc"
+          "channel": 1,
+          "count": 64,
+          "firstValue": 110,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 43,
+          "type": "cc"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "mixer.ch2.fader",
-      "observations" : [
+      "control": "mixer.ch2.fader",
+      "observations": [
         {
-          "channel" : 1,
-          "count" : 82,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 19,
-          "type" : "cc"
+          "channel": 1,
+          "count": 82,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 19,
+          "type": "cc"
         },
         {
-          "channel" : 1,
-          "count" : 82,
-          "firstValue" : 110,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 51,
-          "type" : "cc"
+          "channel": 1,
+          "count": 82,
+          "firstValue": 110,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 51,
+          "type": "cc"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "mixer.ch2.trim",
-      "observations" : [
+      "control": "mixer.ch2.trim",
+      "observations": [
         {
-          "channel" : 1,
-          "count" : 52,
-          "firstValue" : 55,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 4,
-          "type" : "cc"
+          "channel": 1,
+          "count": 52,
+          "firstValue": 55,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 4,
+          "type": "cc"
         },
         {
-          "channel" : 1,
-          "count" : 52,
-          "firstValue" : 37,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 36,
-          "type" : "cc"
+          "channel": 1,
+          "count": 52,
+          "firstValue": 37,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 36,
+          "type": "cc"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "mixer.crossfader",
-      "observations" : [
+      "control": "mixer.crossfader",
+      "observations": [
         {
-          "channel" : 6,
-          "count" : 336,
-          "firstValue" : 0,
-          "lastValue" : 0,
-          "maxValue" : 119,
-          "minValue" : 0,
-          "number" : 31,
-          "type" : "cc"
+          "channel": 6,
+          "count": 336,
+          "firstValue": 0,
+          "lastValue": 0,
+          "maxValue": 119,
+          "minValue": 0,
+          "number": 31,
+          "type": "cc"
         },
         {
-          "channel" : 6,
-          "count" : 336,
-          "firstValue" : 42,
-          "lastValue" : 0,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 63,
-          "type" : "cc"
+          "channel": 6,
+          "count": 336,
+          "firstValue": 42,
+          "lastValue": 0,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 63,
+          "type": "cc"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "mixer.hpLevel",
-      "observations" : [
+      "control": "mixer.hpLevel",
+      "observations": [
         {
-          "channel" : 6,
-          "count" : 61,
-          "firstValue" : 54,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 13,
-          "type" : "cc"
+          "channel": 6,
+          "count": 61,
+          "firstValue": 54,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 13,
+          "type": "cc"
         },
         {
-          "channel" : 6,
-          "count" : 61,
-          "firstValue" : 19,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 45,
-          "type" : "cc"
+          "channel": 6,
+          "count": 61,
+          "firstValue": 19,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 45,
+          "type": "cc"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "mixer.hpMix",
-      "observations" : [
+      "control": "mixer.hpMix",
+      "observations": [
         {
-          "channel" : 6,
-          "count" : 35,
-          "firstValue" : 62,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 12,
-          "type" : "cc"
+          "channel": 6,
+          "count": 35,
+          "firstValue": 62,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 12,
+          "type": "cc"
         },
         {
-          "channel" : 6,
-          "count" : 35,
-          "firstValue" : 118,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 44,
-          "type" : "cc"
+          "channel": 6,
+          "count": 35,
+          "firstValue": 118,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 44,
+          "type": "cc"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "mixer.masterLevel",
-      "observations" : [
+      "control": "mixer.masterLevel",
+      "observations": [
         {
-          "channel" : 6,
-          "count" : 49,
-          "firstValue" : 62,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 8,
-          "type" : "cc"
+          "channel": 6,
+          "count": 49,
+          "firstValue": 62,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 8,
+          "type": "cc"
         },
         {
-          "channel" : 6,
-          "count" : 49,
-          "firstValue" : 117,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 0,
-          "number" : 40,
-          "type" : "cc"
+          "channel": 6,
+          "count": 49,
+          "firstValue": 117,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 40,
+          "type": "cc"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "mixer.smartCX",
-      "observations" : [
+      "control": "mixer.smartCX",
+      "observations": [
         {
-          "channel" : 6,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 0,
-          "type" : "noteOff"
+          "channel": 6,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 0,
+          "type": "noteOff"
         },
         {
-          "channel" : 6,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 0,
-          "type" : "noteOn"
+          "channel": 6,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 0,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
     },
     {
-      "control" : "mixer.smartFader",
-      "observations" : [
+      "control": "mixer.smartFader",
+      "observations": [
         {
-          "channel" : 6,
-          "count" : 1,
-          "firstValue" : 64,
-          "lastValue" : 64,
-          "maxValue" : 64,
-          "minValue" : 64,
-          "number" : 1,
-          "type" : "noteOff"
+          "channel": 6,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 1,
+          "type": "noteOff"
         },
         {
-          "channel" : 6,
-          "count" : 1,
-          "firstValue" : 127,
-          "lastValue" : 127,
-          "maxValue" : 127,
-          "minValue" : 127,
-          "number" : 1,
-          "type" : "noteOn"
+          "channel": 6,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 1,
+          "type": "noteOn"
         }
       ],
-      "pass" : "base",
-      "skipped" : false
+      "pass": "base",
+      "skipped": false
+    },
+    {
+      "control": "browser.encoder",
+      "observations": [
+        {
+          "channel": 6,
+          "count": 45,
+          "firstValue": 1,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 1,
+          "number": 100,
+          "type": "cc"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "browser.encoderPress",
+      "observations": [
+        {
+          "channel": 6,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 66,
+          "type": "noteOff"
+        },
+        {
+          "channel": 6,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 66,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "browser.load1",
+      "observations": [
+        {
+          "channel": 6,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 104,
+          "type": "noteOff"
+        },
+        {
+          "channel": 6,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 104,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "browser.load2",
+      "observations": [
+        {
+          "channel": 6,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 122,
+          "type": "noteOff"
+        },
+        {
+          "channel": 6,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 122,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck1.cue",
+      "observations": [
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 72,
+          "type": "noteOff"
+        },
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 72,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck1.jog",
+      "observations": [
+        {
+          "channel": 0,
+          "count": 292,
+          "firstValue": 63,
+          "lastValue": 65,
+          "maxValue": 67,
+          "minValue": 62,
+          "number": 33,
+          "type": "cc"
+        },
+        {
+          "channel": 0,
+          "count": 252,
+          "firstValue": 63,
+          "lastValue": 66,
+          "maxValue": 67,
+          "minValue": 61,
+          "number": 41,
+          "type": "cc"
+        },
+        {
+          "channel": 0,
+          "count": 2,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 103,
+          "type": "noteOff"
+        },
+        {
+          "channel": 0,
+          "count": 2,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 103,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck1.jogSide",
+      "observations": [
+        {
+          "channel": 0,
+          "count": 435,
+          "firstValue": 65,
+          "lastValue": 65,
+          "maxValue": 66,
+          "minValue": 63,
+          "number": 33,
+          "type": "cc"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck1.jogTouch",
+      "observations": [
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 103,
+          "type": "noteOff"
+        },
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 103,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck1.loopIn",
+      "observations": [
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 76,
+          "type": "noteOff"
+        },
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 76,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck1.loopOut",
+      "observations": [
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 78,
+          "type": "noteOff"
+        },
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 78,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck1.pad1",
+      "observations": [
+        {
+          "channel": 8,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 0,
+          "type": "noteOff"
+        },
+        {
+          "channel": 8,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 0,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck1.pad2",
+      "observations": [
+        {
+          "channel": 8,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 1,
+          "type": "noteOff"
+        },
+        {
+          "channel": 8,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 1,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck1.pad3",
+      "observations": [
+        {
+          "channel": 8,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 2,
+          "type": "noteOff"
+        },
+        {
+          "channel": 8,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 2,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck1.pad4",
+      "observations": [
+        {
+          "channel": 8,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 3,
+          "type": "noteOff"
+        },
+        {
+          "channel": 8,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 3,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck1.pad5",
+      "observations": [
+        {
+          "channel": 8,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 4,
+          "type": "noteOff"
+        },
+        {
+          "channel": 8,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 4,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck1.pad6",
+      "observations": [
+        {
+          "channel": 8,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 5,
+          "type": "noteOff"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck1.pad7",
+      "observations": [
+        {
+          "channel": 8,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 6,
+          "type": "noteOff"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck1.pad8",
+      "observations": [
+        {
+          "channel": 8,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 7,
+          "type": "noteOff"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck1.padModeBeatJump",
+      "observations": [
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 109,
+          "type": "noteOff"
+        },
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 109,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck1.padModeHotCue",
+      "observations": [
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 105,
+          "type": "noteOff"
+        },
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 105,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck1.padModePadFX",
+      "observations": [
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 107,
+          "type": "noteOff"
+        },
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 107,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck1.padModeSampler",
+      "observations": [
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 111,
+          "type": "noteOff"
+        },
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 111,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck1.play",
+      "observations": [
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 63,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck1.reloopExit",
+      "observations": [
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 80,
+          "type": "noteOff"
+        },
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 80,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck1.sync",
+      "observations": [
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 96,
+          "type": "noteOff"
+        },
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 96,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck1.tempo",
+      "observations": [
+        {
+          "channel": 0,
+          "count": 84,
+          "firstValue": 62,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 0,
+          "type": "cc"
+        },
+        {
+          "channel": 0,
+          "count": 84,
+          "firstValue": 2,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 32,
+          "type": "cc"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck2.cue",
+      "observations": [
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 72,
+          "type": "noteOff"
+        },
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 72,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck2.jog",
+      "observations": [
+        {
+          "channel": 1,
+          "count": 40,
+          "firstValue": 65,
+          "lastValue": 65,
+          "maxValue": 65,
+          "minValue": 65,
+          "number": 33,
+          "type": "cc"
+        },
+        {
+          "channel": 1,
+          "count": 171,
+          "firstValue": 65,
+          "lastValue": 65,
+          "maxValue": 66,
+          "minValue": 65,
+          "number": 41,
+          "type": "cc"
+        },
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 103,
+          "type": "noteOff"
+        },
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 103,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck2.jogSide",
+      "observations": [
+        {
+          "channel": 1,
+          "count": 188,
+          "firstValue": 65,
+          "lastValue": 65,
+          "maxValue": 66,
+          "minValue": 65,
+          "number": 33,
+          "type": "cc"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck2.jogTouch",
+      "observations": [
+        {
+          "channel": 1,
+          "count": 8,
+          "firstValue": 65,
+          "lastValue": 65,
+          "maxValue": 65,
+          "minValue": 65,
+          "number": 41,
+          "type": "cc"
+        },
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 103,
+          "type": "noteOff"
+        },
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 103,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck2.loopIn",
+      "observations": [
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 76,
+          "type": "noteOff"
+        },
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 76,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck2.loopOut",
+      "observations": [
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 78,
+          "type": "noteOff"
+        },
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 78,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck2.pad1",
+      "observations": [
+        {
+          "channel": 10,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 0,
+          "type": "noteOff"
+        },
+        {
+          "channel": 10,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 0,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck2.pad2",
+      "observations": [
+        {
+          "channel": 10,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 1,
+          "type": "noteOff"
+        },
+        {
+          "channel": 10,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 1,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck2.pad3",
+      "observations": [
+        {
+          "channel": 10,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 2,
+          "type": "noteOff"
+        },
+        {
+          "channel": 10,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 2,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck2.pad4",
+      "observations": [
+        {
+          "channel": 10,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 3,
+          "type": "noteOff"
+        },
+        {
+          "channel": 10,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 3,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck2.pad5",
+      "observations": [
+        {
+          "channel": 10,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 4,
+          "type": "noteOff"
+        },
+        {
+          "channel": 10,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 4,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck2.pad6",
+      "observations": [
+        {
+          "channel": 10,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 5,
+          "type": "noteOff"
+        },
+        {
+          "channel": 10,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 5,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck2.pad7",
+      "observations": [
+        {
+          "channel": 10,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 6,
+          "type": "noteOff"
+        },
+        {
+          "channel": 10,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 6,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck2.pad8",
+      "observations": [
+        {
+          "channel": 10,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 7,
+          "type": "noteOff"
+        },
+        {
+          "channel": 10,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 7,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck2.padModeBeatJump",
+      "observations": [
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 109,
+          "type": "noteOff"
+        },
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 109,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck2.padModeHotCue",
+      "observations": [
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 105,
+          "type": "noteOff"
+        },
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 105,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck2.padModePadFX",
+      "observations": [
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 107,
+          "type": "noteOff"
+        },
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 107,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck2.padModeSampler",
+      "observations": [
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 111,
+          "type": "noteOff"
+        },
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 111,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck2.play",
+      "observations": [
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 14,
+          "type": "noteOff"
+        },
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 14,
+          "type": "noteOn"
+        },
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 63,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck2.reloopExit",
+      "observations": [
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 80,
+          "type": "noteOff"
+        },
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 80,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck2.sync",
+      "observations": [
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 96,
+          "type": "noteOff"
+        },
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 96,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck2.tempo",
+      "observations": [
+        {
+          "channel": 1,
+          "count": 40,
+          "firstValue": 61,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 0,
+          "type": "cc"
+        },
+        {
+          "channel": 1,
+          "count": 40,
+          "firstValue": 60,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 32,
+          "type": "cc"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "fx.beatLeft",
+      "observations": [
+        {
+          "channel": 4,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 102,
+          "type": "noteOff"
+        },
+        {
+          "channel": 4,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 102,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "fx.beatRight",
+      "observations": [
+        {
+          "channel": 4,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 107,
+          "type": "noteOff"
+        },
+        {
+          "channel": 4,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 107,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "fx.chSelect",
+      "observations": [
+        {
+          "channel": 4,
+          "count": 2,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 16,
+          "type": "noteOff"
+        },
+        {
+          "channel": 4,
+          "count": 4,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 17,
+          "type": "noteOff"
+        },
+        {
+          "channel": 5,
+          "count": 4,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 16,
+          "type": "noteOff"
+        },
+        {
+          "channel": 5,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 17,
+          "type": "noteOff"
+        },
+        {
+          "channel": 4,
+          "count": 2,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 16,
+          "type": "noteOn"
+        },
+        {
+          "channel": 5,
+          "count": 3,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 17,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "fx.levelDepth",
+      "observations": [
+        {
+          "channel": 4,
+          "count": 47,
+          "firstValue": 62,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 2,
+          "type": "cc"
+        },
+        {
+          "channel": 4,
+          "count": 47,
+          "firstValue": 118,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 34,
+          "type": "cc"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "fx.onOff",
+      "observations": [
+        {
+          "channel": 4,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 67,
+          "type": "noteOff"
+        },
+        {
+          "channel": 5,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 67,
+          "type": "noteOff"
+        },
+        {
+          "channel": 4,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 67,
+          "type": "noteOn"
+        },
+        {
+          "channel": 5,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 67,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "fx.select",
+      "observations": [
+        {
+          "channel": 4,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 100,
+          "type": "noteOff"
+        },
+        {
+          "channel": 4,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 100,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "mixer.ch1.cfx",
+      "observations": [
+        {
+          "channel": 6,
+          "count": 37,
+          "firstValue": 63,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 23,
+          "type": "cc"
+        },
+        {
+          "channel": 6,
+          "count": 37,
+          "firstValue": 76,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 55,
+          "type": "cc"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "mixer.ch1.cue",
+      "observations": [
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 104,
+          "type": "noteOff"
+        },
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 104,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "mixer.ch1.eqHi",
+      "observations": [
+        {
+          "channel": 0,
+          "count": 50,
+          "firstValue": 63,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 7,
+          "type": "cc"
+        },
+        {
+          "channel": 0,
+          "count": 50,
+          "firstValue": 42,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 39,
+          "type": "cc"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "mixer.ch1.eqLow",
+      "observations": [
+        {
+          "channel": 0,
+          "count": 35,
+          "firstValue": 61,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 15,
+          "type": "cc"
+        },
+        {
+          "channel": 0,
+          "count": 35,
+          "firstValue": 6,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 47,
+          "type": "cc"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "mixer.ch1.eqMid",
+      "observations": [
+        {
+          "channel": 0,
+          "count": 36,
+          "firstValue": 60,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 11,
+          "type": "cc"
+        },
+        {
+          "channel": 0,
+          "count": 36,
+          "firstValue": 32,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 43,
+          "type": "cc"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "mixer.ch1.fader",
+      "observations": [
+        {
+          "channel": 0,
+          "count": 27,
+          "firstValue": 126,
+          "lastValue": 0,
+          "maxValue": 126,
+          "minValue": 0,
+          "number": 19,
+          "type": "cc"
+        },
+        {
+          "channel": 0,
+          "count": 27,
+          "firstValue": 63,
+          "lastValue": 0,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 51,
+          "type": "cc"
+        },
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 82,
+          "type": "noteOff"
+        },
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 82,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "mixer.ch1.trim",
+      "observations": [
+        {
+          "channel": 0,
+          "count": 43,
+          "firstValue": 55,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 4,
+          "type": "cc"
+        },
+        {
+          "channel": 0,
+          "count": 43,
+          "firstValue": 53,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 36,
+          "type": "cc"
+        },
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 63,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "mixer.ch2.cfx",
+      "observations": [
+        {
+          "channel": 6,
+          "count": 36,
+          "firstValue": 62,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 24,
+          "type": "cc"
+        },
+        {
+          "channel": 6,
+          "count": 36,
+          "firstValue": 33,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 56,
+          "type": "cc"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "mixer.ch2.cue",
+      "observations": [
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 104,
+          "type": "noteOff"
+        },
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 104,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "mixer.ch2.eqHi",
+      "observations": [
+        {
+          "channel": 1,
+          "count": 87,
+          "firstValue": 59,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 7,
+          "type": "cc"
+        },
+        {
+          "channel": 1,
+          "count": 87,
+          "firstValue": 108,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 39,
+          "type": "cc"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "mixer.ch2.eqLow",
+      "observations": [
+        {
+          "channel": 1,
+          "count": 58,
+          "firstValue": 57,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 15,
+          "type": "cc"
+        },
+        {
+          "channel": 1,
+          "count": 58,
+          "firstValue": 39,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 47,
+          "type": "cc"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "mixer.ch2.eqMid",
+      "observations": [
+        {
+          "channel": 1,
+          "count": 59,
+          "firstValue": 60,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 11,
+          "type": "cc"
+        },
+        {
+          "channel": 1,
+          "count": 59,
+          "firstValue": 14,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 43,
+          "type": "cc"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "mixer.ch2.fader",
+      "observations": [
+        {
+          "channel": 1,
+          "count": 64,
+          "firstValue": 127,
+          "lastValue": 0,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 19,
+          "type": "cc"
+        },
+        {
+          "channel": 1,
+          "count": 64,
+          "firstValue": 110,
+          "lastValue": 0,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 51,
+          "type": "cc"
+        },
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 82,
+          "type": "noteOff"
+        },
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 82,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "mixer.ch2.trim",
+      "observations": [
+        {
+          "channel": 1,
+          "count": 48,
+          "firstValue": 62,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 4,
+          "type": "cc"
+        },
+        {
+          "channel": 1,
+          "count": 48,
+          "firstValue": 68,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 36,
+          "type": "cc"
+        },
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 63,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "mixer.crossfader",
+      "observations": [
+        {
+          "channel": 6,
+          "count": 153,
+          "firstValue": 63,
+          "lastValue": 0,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 31,
+          "type": "cc"
+        },
+        {
+          "channel": 6,
+          "count": 153,
+          "firstValue": 83,
+          "lastValue": 0,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 63,
+          "type": "cc"
+        },
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 82,
+          "type": "noteOff"
+        },
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 102,
+          "type": "noteOff"
+        },
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 82,
+          "type": "noteOff"
+        },
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 82,
+          "type": "noteOn"
+        },
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 102,
+          "type": "noteOn"
+        },
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 82,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "mixer.hpLevel",
+      "observations": [
+        {
+          "channel": 6,
+          "count": 46,
+          "firstValue": 55,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 13,
+          "type": "cc"
+        },
+        {
+          "channel": 6,
+          "count": 46,
+          "firstValue": 5,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 45,
+          "type": "cc"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "mixer.hpMix",
+      "observations": [
+        {
+          "channel": 6,
+          "count": 30,
+          "firstValue": 62,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 12,
+          "type": "cc"
+        },
+        {
+          "channel": 6,
+          "count": 30,
+          "firstValue": 67,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 44,
+          "type": "cc"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "mixer.masterLevel",
+      "observations": [
+        {
+          "channel": 6,
+          "count": 44,
+          "firstValue": 62,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 8,
+          "type": "cc"
+        },
+        {
+          "channel": 6,
+          "count": 44,
+          "firstValue": 68,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 0,
+          "number": 40,
+          "type": "cc"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "mixer.smartCX",
+      "observations": [
+        {
+          "channel": 6,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 8,
+          "type": "noteOff"
+        },
+        {
+          "channel": 6,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 8,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "mixer.smartFader",
+      "observations": [
+        {
+          "channel": 6,
+          "count": 1,
+          "firstValue": 64,
+          "lastValue": 64,
+          "maxValue": 64,
+          "minValue": 64,
+          "number": 9,
+          "type": "noteOff"
+        },
+        {
+          "channel": 6,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 9,
+          "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
     }
   ]
 }

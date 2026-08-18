@@ -47,9 +47,24 @@ struct FLX4DecoderTests {
 
     @Test func shiftVariantNoteNumberForcesShiftedFlag() {
         let decoder = DDJFLX4Descriptor()
-        // 0x0E is the SHIFT-variant of play (provisional, from reference)
+        // Captured Pass B: SHIFT variants arrive as different note numbers
         #expect(decoder.decode(.noteOn(channel: 0, note: 0x0E, velocity: 127))
             == [.pressed(ControlID("deck1.play"), shifted: true)])
+        #expect(decoder.decode(.noteOn(channel: 6, note: 0x68, velocity: 127))
+            == [.pressed(ControlID("browser.load1"), shifted: true)])
+        #expect(decoder.decode(.noteOn(channel: 4, note: 0x66, velocity: 127))
+            == [.pressed(ControlID("fx.beatLeft"), shifted: true)])
+        #expect(decoder.decode(.noteOn(channel: 6, note: 0x09, velocity: 127))
+            == [.pressed(ControlID("mixer.smartFader"), shifted: true)])
+    }
+
+    @Test func faderStartAuxiliaryNotesDecode() {
+        let decoder = DDJFLX4Descriptor()
+        // Captured Pass B: SHIFT + fader movement emits firmware fader-start notes
+        #expect(decoder.decode(.noteOn(channel: 0, note: 0x52, velocity: 127))
+            == [.pressed(ControlID("deck1.faderStart"), shifted: false)])
+        #expect(decoder.decode(.noteOn(channel: 1, note: 0x66, velocity: 127))
+            == [.pressed(ControlID("deck2.xfaderStart"), shifted: false)])
     }
 
     // MARK: Pads (mode-dependent note ranges, SHIFT as channel switch)
