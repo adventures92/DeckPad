@@ -12,37 +12,37 @@
 			containerPortal = 6CDB4CBE3034425800C24621 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6CDB4CC53034425800C24621;
-			remoteInfo = "DevPad Controller";
+			remoteInfo = "DeckPad";
 		};
 		6CDB4CE03034425900C24621 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6CDB4CBE3034425800C24621 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6CDB4CC53034425800C24621;
-			remoteInfo = "DevPad Controller";
+			remoteInfo = "DeckPad";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6CDB4CC63034425800C24621 /* DevPad Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DevPad Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6CDB4CD53034425900C24621 /* DevPad ControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DevPad ControllerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6CDB4CDF3034425900C24621 /* DevPad ControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DevPad ControllerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CDB4CC63034425800C24621 /* DeckPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DeckPad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CDB4CD53034425900C24621 /* DeckPadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DeckPadTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CDB4CDF3034425900C24621 /* DeckPadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DeckPadUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		6CDB4CC83034425800C24621 /* DevPad Controller */ = {
+		6CDB4CC83034425800C24621 /* DeckPad */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "DevPad Controller";
+			path = "DeckPad";
 			sourceTree = "<group>";
 		};
-		6CDB4CD83034425900C24621 /* DevPad ControllerTests */ = {
+		6CDB4CD83034425900C24621 /* DeckPadTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "DevPad ControllerTests";
+			path = "DeckPadTests";
 			sourceTree = "<group>";
 		};
-		6CDB4CE23034425900C24621 /* DevPad ControllerUITests */ = {
+		6CDB4CE23034425900C24621 /* DeckPadUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "DevPad ControllerUITests";
+			path = "DeckPadUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,9 +75,9 @@
 		6CDB4CBD3034425800C24621 = {
 			isa = PBXGroup;
 			children = (
-				6CDB4CC83034425800C24621 /* DevPad Controller */,
-				6CDB4CD83034425900C24621 /* DevPad ControllerTests */,
-				6CDB4CE23034425900C24621 /* DevPad ControllerUITests */,
+				6CDB4CC83034425800C24621 /* DeckPad */,
+				6CDB4CD83034425900C24621 /* DeckPadTests */,
+				6CDB4CE23034425900C24621 /* DeckPadUITests */,
 				6CDB4CC73034425800C24621 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,9 +85,9 @@
 		6CDB4CC73034425800C24621 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6CDB4CC63034425800C24621 /* DevPad Controller.app */,
-				6CDB4CD53034425900C24621 /* DevPad ControllerTests.xctest */,
-				6CDB4CDF3034425900C24621 /* DevPad ControllerUITests.xctest */,
+				6CDB4CC63034425800C24621 /* DeckPad.app */,
+				6CDB4CD53034425900C24621 /* DeckPadTests.xctest */,
+				6CDB4CDF3034425900C24621 /* DeckPadUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +95,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6CDB4CC53034425800C24621 /* DevPad Controller */ = {
+		6CDB4CC53034425800C24621 /* DeckPad */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6CDB4CE93034425900C24621 /* Build configuration list for PBXNativeTarget "DevPad Controller" */;
+			buildConfigurationList = 6CDB4CE93034425900C24621 /* Build configuration list for PBXNativeTarget "DeckPad" */;
 			buildPhases = (
 				6CDB4CC23034425800C24621 /* Sources */,
 				6CDB4CC33034425800C24621 /* Frameworks */,
@@ -108,18 +108,18 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				6CDB4CC83034425800C24621 /* DevPad Controller */,
+				6CDB4CC83034425800C24621 /* DeckPad */,
 			);
-			name = "DevPad Controller";
+			name = "DeckPad";
 			packageProductDependencies = (
 			);
-			productName = "DevPad Controller";
-			productReference = 6CDB4CC63034425800C24621 /* DevPad Controller.app */;
+			productName = "DeckPad";
+			productReference = 6CDB4CC63034425800C24621 /* DeckPad.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6CDB4CD43034425900C24621 /* DevPad ControllerTests */ = {
+		6CDB4CD43034425900C24621 /* DeckPadTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6CDB4CEC3034425900C24621 /* Build configuration list for PBXNativeTarget "DevPad ControllerTests" */;
+			buildConfigurationList = 6CDB4CEC3034425900C24621 /* Build configuration list for PBXNativeTarget "DeckPadTests" */;
 			buildPhases = (
 				6CDB4CD13034425900C24621 /* Sources */,
 				6CDB4CD23034425900C24621 /* Frameworks */,
@@ -131,18 +131,18 @@
 				6CDB4CD73034425900C24621 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				6CDB4CD83034425900C24621 /* DevPad ControllerTests */,
+				6CDB4CD83034425900C24621 /* DeckPadTests */,
 			);
-			name = "DevPad ControllerTests";
+			name = "DeckPadTests";
 			packageProductDependencies = (
 			);
-			productName = "DevPad ControllerTests";
-			productReference = 6CDB4CD53034425900C24621 /* DevPad ControllerTests.xctest */;
+			productName = "DeckPadTests";
+			productReference = 6CDB4CD53034425900C24621 /* DeckPadTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		6CDB4CDE3034425900C24621 /* DevPad ControllerUITests */ = {
+		6CDB4CDE3034425900C24621 /* DeckPadUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6CDB4CEF3034425900C24621 /* Build configuration list for PBXNativeTarget "DevPad ControllerUITests" */;
+			buildConfigurationList = 6CDB4CEF3034425900C24621 /* Build configuration list for PBXNativeTarget "DeckPadUITests" */;
 			buildPhases = (
 				6CDB4CDB3034425900C24621 /* Sources */,
 				6CDB4CDC3034425900C24621 /* Frameworks */,
@@ -154,13 +154,13 @@
 				6CDB4CE13034425900C24621 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				6CDB4CE23034425900C24621 /* DevPad ControllerUITests */,
+				6CDB4CE23034425900C24621 /* DeckPadUITests */,
 			);
-			name = "DevPad ControllerUITests";
+			name = "DeckPadUITests";
 			packageProductDependencies = (
 			);
-			productName = "DevPad ControllerUITests";
-			productReference = 6CDB4CDF3034425900C24621 /* DevPad ControllerUITests.xctest */;
+			productName = "DeckPadUITests";
+			productReference = 6CDB4CDF3034425900C24621 /* DeckPadUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6CDB4CC13034425800C24621 /* Build configuration list for PBXProject "DevPad Controller" */;
+			buildConfigurationList = 6CDB4CC13034425800C24621 /* Build configuration list for PBXProject "DeckPad" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -200,9 +200,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6CDB4CC53034425800C24621 /* DevPad Controller */,
-				6CDB4CD43034425900C24621 /* DevPad ControllerTests */,
-				6CDB4CDE3034425900C24621 /* DevPad ControllerUITests */,
+				6CDB4CC53034425800C24621 /* DeckPad */,
+				6CDB4CD43034425900C24621 /* DeckPadTests */,
+				6CDB4CDE3034425900C24621 /* DeckPadUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,12 +258,12 @@
 /* Begin PBXTargetDependency section */
 		6CDB4CD73034425900C24621 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6CDB4CC53034425800C24621 /* DevPad Controller */;
+			target = 6CDB4CC53034425800C24621 /* DeckPad */;
 			targetProxy = 6CDB4CD63034425900C24621 /* PBXContainerItemProxy */;
 		};
 		6CDB4CE13034425900C24621 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6CDB4CC53034425800C24621 /* DevPad Controller */;
+			target = 6CDB4CC53034425800C24621 /* DeckPad */;
 			targetProxy = 6CDB4CE03034425900C24621 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -395,17 +395,18 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_APP_SANDBOX = YES;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2026 Anand Verma";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.adven.DevPad-Controller";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adven.DeckPad";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -425,17 +426,18 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_APP_SANDBOX = YES;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2026 Anand Verma";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.adven.DevPad-Controller";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adven.DeckPad";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -456,14 +458,14 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 26.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.adven.DevPad-ControllerTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adven.DeckPadTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DevPad Controller.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DevPad Controller";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeckPad.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DeckPad";
 			};
 			name = Debug;
 		};
@@ -476,14 +478,14 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 26.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.adven.DevPad-ControllerTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adven.DeckPadTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DevPad Controller.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DevPad Controller";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeckPad.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DeckPad";
 			};
 			name = Release;
 		};
@@ -494,14 +496,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.adven.DevPad-ControllerUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adven.DeckPadUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "DevPad Controller";
+				TEST_TARGET_NAME = "DeckPad";
 			};
 			name = Debug;
 		};
@@ -512,21 +514,21 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.adven.DevPad-ControllerUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adven.DeckPadUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "DevPad Controller";
+				TEST_TARGET_NAME = "DeckPad";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6CDB4CC13034425800C24621 /* Build configuration list for PBXProject "DevPad Controller" */ = {
+		6CDB4CC13034425800C24621 /* Build configuration list for PBXProject "DeckPad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6CDB4CE73034425900C24621 /* Debug */,
@@ -535,7 +537,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6CDB4CE93034425900C24621 /* Build configuration list for PBXNativeTarget "DevPad Controller" */ = {
+		6CDB4CE93034425900C24621 /* Build configuration list for PBXNativeTarget "DeckPad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6CDB4CEA3034425900C24621 /* Debug */,
@@ -544,7 +546,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6CDB4CEC3034425900C24621 /* Build configuration list for PBXNativeTarget "DevPad ControllerTests" */ = {
+		6CDB4CEC3034425900C24621 /* Build configuration list for PBXNativeTarget "DeckPadTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6CDB4CED3034425900C24621 /* Debug */,
@@ -553,7 +555,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6CDB4CEF3034425900C24621 /* Build configuration list for PBXNativeTarget "DevPad ControllerUITests" */ = {
+		6CDB4CEF3034425900C24621 /* Build configuration list for PBXNativeTarget "DeckPadUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6CDB4CF03034425900C24621 /* Debug */,

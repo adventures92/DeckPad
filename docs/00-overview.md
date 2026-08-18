@@ -20,8 +20,8 @@ The controller most DJ hobbyists own sits idle 95% of the time. DeckPad turns th
 **DeckPad** — a DJ *deck* meets a macro *pad*. Chosen over CueKey, Jockey, and the scaffold name DevPad (decision [D-001](99-decisions.md#d-001-app-name-deckpad)).
 
 - Product/display name: `DeckPad`
-- Bundle identifier: `com.adven.DeckPad` (rename from `com.adven.DevPad-Controller` happens in [M0](tasks/M0-foundation.md))
-- The Xcode folder/scheme keeps the scaffold name until M0 renames it.
+- Bundle identifier: `com.adven.DeckPad`
+- Renamed from the "DevPad Controller" scaffold in [M0](tasks/M0-foundation.md).
 
 ## Personas
 

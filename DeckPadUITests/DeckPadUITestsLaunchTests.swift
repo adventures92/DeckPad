@@ -1,14 +1,11 @@
 //
-//  DevPad_ControllerUITestsLaunchTests.swift
-//  DevPad ControllerUITests
-//
-//  Created by Anand Verma on 18/08/26.
+//  DeckPadUITestsLaunchTests.swift
+//  DeckPadUITests
 //
 
 import XCTest
 
-final class DevPad_ControllerUITestsLaunchTests: XCTestCase {
-
+final class DeckPadUITestsLaunchTests: XCTestCase {
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
     }
@@ -21,11 +18,6 @@ final class DevPad_ControllerUITestsLaunchTests: XCTestCase {
     func testLaunch() throws {
         let app = XCUIApplication()
         app.launch()
-
-        // Insert steps here to perform after app launch but before taking a screenshot,
-        // such as logging into a test account or navigating somewhere in the app
-        // XCUIAutomation Documentation
-        // https://developer.apple.com/documentation/xcuiautomation
 
         let attachment = XCTAttachment(screenshot: app.screenshot())
         attachment.name = "Launch Screen"

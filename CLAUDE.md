@@ -1,6 +1,6 @@
 # DeckPad — repo guide
 
-macOS app (SwiftUI, macOS 26+) turning a Pioneer DDJ-FLX4 DJ controller into a programmable Mac control surface. Product name is **DeckPad**; the Xcode project/folder keeps the scaffold name "DevPad Controller" until milestone M0 renames it.
+macOS app (SwiftUI, macOS 26+) turning a Pioneer DDJ-FLX4 DJ controller into a programmable Mac control surface. Product name is **DeckPad** (`DeckPad.xcodeproj`, bundle id `com.adven.DeckPad`). The build uses Swift approachable concurrency with `SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor` — mark cross-thread data types `nonisolated` (see `DeckPad/Core/CoreTypes.swift`).
 
 ## Where truth lives
 
@@ -24,8 +24,8 @@ macOS app (SwiftUI, macOS 26+) turning a Pioneer DDJ-FLX4 DJ controller into a p
 ## Build & test
 
 ```bash
-xcodebuild -project "DevPad Controller.xcodeproj" -scheme "DevPad Controller" build
-xcodebuild -project "DevPad Controller.xcodeproj" -scheme "DevPad Controller" test
+xcodebuild -project DeckPad.xcodeproj -scheme DeckPad build
+xcodebuild -project DeckPad.xcodeproj -scheme DeckPad test -skip-testing:DeckPadUITests
 ```
 
-(Scheme name becomes `DeckPad` after M0.) Testing hardware is Anand's own DDJ-FLX4; hardware-dependent tests must also run from the `flx4-capture.json` fixture (created in M1) so CI needs no device.
+UI tests only run from Xcode — headless CLI runs fail with "Timed out while enabling automation mode" (TCC), so always skip `DeckPadUITests` in scripted runs. Testing hardware is Anand's own DDJ-FLX4; hardware-dependent tests must also run from the `flx4-capture.json` fixture (created in M1) so CI needs no device.

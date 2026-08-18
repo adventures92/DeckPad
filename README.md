@@ -4,7 +4,7 @@
 
 DeckPad is a native macOS app (SwiftUI, macOS 26+, Liquid Glass design) that repurposes a Pioneer DJ **DDJ-FLX4** as a programmable input device. Map any pad or button to keyboard shortcuts, Shortcuts, shell commands, or app actions; ride the faders for system volume and screen brightness; scroll and scrub with the jog wheels. Once configured, DeckPad lives in the menu bar as a background service — with feedback via a notch toast, a floating pill, sounds, or the controller's own LEDs.
 
-> **Status:** documentation/design phase complete; implementation starts at milestone [M0](docs/tasks/M0-foundation.md). The Xcode project still carries the scaffold name "DevPad Controller" until M0 renames it.
+> **Status:** [M0 — Foundation](docs/tasks/M0-foundation.md) complete — the project builds and runs as DeckPad (menu-bar shell, sandbox off, module skeleton). Next up: [M1 — MIDI engine](docs/tasks/M1-midi-engine.md).
 
 ## Documentation
 
@@ -32,4 +32,10 @@ Start with the [overview](docs/00-overview.md), then:
 
 ## Building
 
-Open `DevPad Controller.xcodeproj` and run the app scheme. Distribution is Developer ID + notarized DMG (outside the App Store) — pipeline lands in [M6](docs/tasks/M6-distribution.md).
+Open `DeckPad.xcodeproj` and run the `DeckPad` scheme, or:
+
+```bash
+xcodebuild -project DeckPad.xcodeproj -scheme DeckPad build
+```
+
+Run UI tests from Xcode (headless CLI runs can't enable automation mode). Distribution is Developer ID + notarized DMG (outside the App Store) — pipeline lands in [M6](docs/tasks/M6-distribution.md).

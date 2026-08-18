@@ -6,30 +6,32 @@
 ## Tasks
 
 ### Identity & project settings
-- [ ] Rename product: display name & `PRODUCT_NAME` → `DeckPad`; scheme → `DeckPad` (folder/`.xcodeproj` rename optional but preferred — verify git history survives via `git mv`)
-- [ ] Bundle IDs → `com.adven.DeckPad` (+ `.Tests` / `.UITests`)
-- [ ] `ENABLE_APP_SANDBOX = NO` on the app target; Hardened Runtime stays ON (notarization) — remove sandbox entitlements file content if present
-- [ ] Add `LSUIElement = NO` (regular app; accessory switching is runtime via activation policy)
-- [ ] Add `.gitignore` (xcuserdata, DerivedData, .DS_Store) — xcuserdata is currently tracked
-- [ ] Set app category `public.app-category.utilities`, copyright string
+- [x] Rename product: display name & `PRODUCT_NAME` → `DeckPad`; scheme → `DeckPad`; folder + `.xcodeproj` renamed via `git mv` (history preserved); shared scheme committed at `DeckPad.xcodeproj/xcshareddata/xcschemes/DeckPad.xcscheme`
+- [x] Bundle IDs → `com.adven.DeckPad` (+ `DeckPadTests` / `DeckPadUITests`)
+- [x] `ENABLE_APP_SANDBOX = NO` on all targets; `ENABLE_HARDENED_RUNTIME = YES` added (notarization); sandbox-only `ENABLE_USER_SELECTED_FILES` removed — verified via `codesign -d --entitlements`: no `app-sandbox` key
+- [x] `LSUIElement` left at default (NO) — regular app; accessory switching is runtime via activation policy
+- [x] Add `.gitignore` (xcuserdata, DerivedData, .DS_Store); previously tracked xcuserdata untracked
+- [x] Set app category `public.app-category.utilities`, copyright string
 
 ### Strip template
-- [ ] Delete `Item.swift`, SwiftData `ModelContainer` from `DevPad_ControllerApp.swift`, template `ContentView` list UI
-- [ ] Remove SwiftData import everywhere; app compiles clean
+- [x] Delete `Item.swift`, SwiftData `ModelContainer`, template `ContentView` list UI
+- [x] Remove SwiftData import everywhere; verified zero `SwiftData`/`ModelContainer` references remain
 
 ### Skeleton
-- [ ] Create module folder structure per [02-architecture.md §1](../02-architecture.md#1-module-map): `MIDIEngine/ DeviceLayer/ Dispatcher/ MappingStore/ ProfileSwitcher/ ActionEngine/ FeedbackCenter/ Permissions/ Service/ UI/`
-- [ ] Define shared core types (`ControlID`, `ControlKind`, `ControlEvent`, `Trigger` stubs) in a `Core/` module folder — copied from [02 §2](../02-architecture.md#2-core-types-shared-vocabulary)
-- [ ] `MenuBarExtra` scene with placeholder menu (device status stub, Open, Quit)
-- [ ] ServiceController stub: window-close → `.accessory`, menu-bar "Open DeckPad" → `.regular` (FR-50 skeleton)
-- [ ] Main window placeholder: dark `bg.canvas` background, "DeckPad" hero — no real UI yet
+- [x] Create module folder structure per [02-architecture.md §1](../02-architecture.md#1-module-map) (`Core/ Service/ UI/` populated; `MIDIEngine/ DeviceLayer/ Dispatcher/ MappingStore/ ProfileSwitcher/ ActionEngine/ FeedbackCenter/ Permissions/` exist on disk and enter git as their milestones populate them)
+- [x] Shared core types (`ControlID`, `ControlKind`, `ControlEvent`, `Trigger`) in `DeckPad/Core/CoreTypes.swift`, copied from [02 §2](../02-architecture.md#2-core-types-shared-vocabulary), with Codable round-trip unit tests
+- [x] `MenuBarExtra` scene with placeholder menu (device status stub, Open, Quit)
+- [x] ServiceController stub: window-close → `.accessory`, menu-bar "Open DeckPad" → `.regular` (FR-50 skeleton) — `DeckPad/Service/ServiceController.swift`
+- [x] Main window placeholder: dark `bg.canvas` background, gradient "DeckPad" hero
 
 ### Verification
-- [ ] `xcodebuild -scheme DeckPad build test` passes; app launches, menu-bar icon present, window ↔ accessory transition works both directions
-- [ ] Repo committed; `git status` clean
+- [x] `xcodebuild -project DeckPad.xcodeproj -scheme DeckPad build` succeeds; unit tests pass (`CoreTypesTests` 2/2). Note: **UI tests must be run from Xcode** — headless CLI runs fail with "Timed out while enabling automation mode" (TCC automation consent); skip them in scripts with `-skip-testing:DeckPadUITests`
+- [x] App launches, correct bundle identity (`com.adven.DeckPad` / `DeckPad`)
+- [ ] Eyeball check (Anand): menu-bar icon present; window ↔ accessory transition works both directions (close window → Dock icon disappears, menu bar stays; "Open DeckPad" → window + Dock icon return)
+- [x] Repo committed; `git status` clean
 
 ## Acceptance criteria
-- App identifies as **DeckPad** everywhere visible (menu bar, About, Dock, bundle).
-- Sandbox is off (verify with `codesign -d --entitlements - DeckPad.app`).
-- No SwiftData symbols remain.
-- Roadmap demo: window ↔ menu-bar accessory switching works.
+- [x] App identifies as **DeckPad** everywhere visible (bundle, window title, menu bar).
+- [x] Sandbox is off (verified with `codesign -d --entitlements - DeckPad.app`).
+- [x] No SwiftData symbols remain.
+- [ ] Roadmap demo confirmed by eyeball: window ↔ menu-bar accessory switching works.
