@@ -29,7 +29,7 @@ Posted as NX system-defined events (`NSEvent.otherEvent` subtype 8) — the same
 | Action | Parameters | Controls | Permission | Technique |
 |---|---|---|---|---|
 | **Launch / focus app** | app (bundle ID picker) | discrete | none | `NSWorkspace.openApplication` |
-| **Hide / quit app** | app, force flag (quit) | discrete | Automation (quit via AppleEvent) | AppleEvents |
+| **Hide / quit app** | app, force flag (quit) | discrete | none | `NSRunningApplication` hide/terminate (no AppleEvents needed) |
 | **Cycle app windows** | — | discrete | Accessibility | ⌘` keystroke to frontmost |
 | **Open URL** | URL string | discrete | none | `NSWorkspace.open` |
 | **Open file/folder** | path (file picker) | discrete | none | `NSWorkspace.open` |

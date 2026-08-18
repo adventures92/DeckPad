@@ -6,25 +6,25 @@
 ## Tasks
 
 ### PermissionsManager
-- [ ] Accessibility: trusted check, prompt-once flow, System Settings deep link, 1 Hz visible-only polling, revocation detection flag ([08 §4](../08-background-service.md#4-permissions-acquisition-ux))
-- [ ] Automation: pre-flight hint data + `AEDeterminePermissionToAutomateTarget` status reads
-- [ ] Published permission state (ObservableObject) for UI/menu-bar badges
+- [x] Accessibility: trusted check, prompt-once flow, System Settings deep link, 1 Hz visible-only polling, revocation detection flag ([08 §4](../08-background-service.md#4-permissions-acquisition-ux)) — `DeckPad/Permissions/PermissionsManager.swift`
+- [ ] Automation: pre-flight hint data + `AEDeterminePermissionToAutomateTarget` status reads (consumer is the M4 Permissions settings tab; usage description shipped now)
+- [x] Published permission state (ObservableObject); menu bar shows a grant button when Accessibility is missing
 
-### Executors (one type per catalog section; `ActionExecuting` protocol declaring permission + sync/async)
-- [ ] Keystroke + key-repeat: CGEvent down/up with modifiers ([06 §1](../06-actions-catalog.md#1-keyboard))
-- [ ] Text snippet: unicode chunked typing
-- [ ] Media/system keys: NX system-defined events — play/pause, next/prev, volume ±/mute, brightness ±, Mission Control, Launchpad, kbd illumination ([06 §2](../06-actions-catalog.md#2-media--system-keys))
-- [ ] Apps & files: launch/focus, hide/quit, cycle windows, open URL, open file ([06 §3](../06-actions-catalog.md#3-apps--files))
-- [ ] Automation: `shortcuts run` (+ `shortcuts list` for picker data), shell via zsh with timeout + env (`DECKPAD_VALUE`/`DECKPAD_TICKS`), AppleScript ([06 §4](../06-actions-catalog.md#4-automation)) — all async off the hub
-- [ ] System toggles: lock, screen saver, dark mode, screenshot modes, DND-via-bundled-Shortcut, display sleep ([06 §5](../06-actions-catalog.md#5-system-toggles--session))
-- [ ] Internal actions: switch/pin profile, suspend, open window, toggle monitor, no-op ([06 §6](../06-actions-catalog.md#6-deckpad-internal)) — wired to stubs until M3
-- [ ] Continuous: CoreAudio system volume; brightness via DisplayServices with stepped-key fallback; curve + range + clamp support ([06 §7](../06-actions-catalog.md#7-continuous-targets-fr-11))
-- [ ] Jog modes: scroll events (axis/speed/natural), arrow stepper, zoom, dial increments, custom-per-tick ([06 §8](../06-actions-catalog.md#8-jog--encoder-modes-fr-12))
+### Executors (`ActionEngine` with injectable seams: EventPosting, ProcessRunning, Volume/BrightnessControlling)
+- [x] Keystroke + key-repeat: CGEvent down/up with modifiers ([06 §1](../06-actions-catalog.md#1-keyboard))
+- [x] Text snippet: unicode chunked typing (20 UTF-16 units/chunk)
+- [x] Media/system keys: NX system-defined events — play/pause, next/prev, volume ±/mute, brightness ±, kbd illumination; Mission Control/Launchpad via app launch ([06 §2](../06-actions-catalog.md#2-media--system-keys))
+- [x] Apps & files: launch/focus, hide/quit (via `NSRunningApplication` — no Automation permission needed, docs/06 updated), cycle windows, open URL, open file
+- [x] Automation: `shortcuts run`, shell via zsh with timeout + env, AppleScript via `osascript` ([06 §4](../06-actions-catalog.md#4-automation)) — all async off the hub with completion results (`shortcuts list` picker data lands with the M4 editor)
+- [x] System toggles: lock, screen saver, dark mode, screenshot modes, DND (runs user-installed "DeckPad DND" Shortcut; bundled asset ships with M6 onboarding), display sleep
+- [x] Internal actions: openDeckPad live; switch/pin profile, suspend, toggle monitor are logged stubs until M3 ([06 §6](../06-actions-catalog.md#6-deckpad-internal))
+- [x] Continuous: CoreAudio system volume; brightness via DisplayServices (dlopen) with stepped-key fallback; curve + range + clamp (`ContinuousShape`) ([06 §7](../06-actions-catalog.md#7-continuous-targets-fr-11))
+- [x] Jog modes: scroll (axis/speed/natural), arrow stepper with tick accumulators, zoom, volume/brightness dials, custom-per-tick ([06 §8](../06-actions-catalog.md#8-jog--encoder-modes-fr-12))
 
 ### Quality
-- [ ] Latency signposts (os_signpost) input→post; measure on hardware: p95 ≤ 50 ms for keystroke/media actions (NFR-1) — record numbers in this file
-- [ ] Failure propagation: executor errors → typed result for FeedbackCenter (silent-failure ban, [07 §6](../07-feedback-system.md#6-rules--rate-limits-sanity-guarantees))
-- [ ] Unit tests: each executor invoked with expected parameters against a mock event-poster/process-runner; brightness fallback path tested
+- [ ] Latency: DemoBench logs per-action dispatch time + p50/p95 rollups (os_log `latency` category); measure on hardware during the demo run: p95 ≤ 50 ms (NFR-1) — record numbers in this file
+- [x] Failure propagation: `ActionResult` (success/failure/permissionMissing); async subprocess results via completion; Accessibility failures set the PermissionsManager flag (silent-failure ban, [07 §6](../07-feedback-system.md#6-rules--rate-limits-sanity-guarantees))
+- [x] Unit tests: 13 executor tests against mock poster/runner/volume/brightness incl. the brightness fallback path and permission-missing visibility
 
 ## Acceptance criteria
 - Roadmap demo: hardcoded test mappings — pad types a keystroke into TextEdit, fader rides system volume smoothly, jog scrolls Safari — all measured under budget.
