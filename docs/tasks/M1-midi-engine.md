@@ -6,20 +6,20 @@
 ## Tasks
 
 ### MIDIEngine
-- [ ] Add MIDIKit via SPM; pin version; note license in About credits list
-- [ ] MIDIEngine: manager lifecycle, input connection, typed event callback on dedicated queue (FR-2)
-- [ ] FLX4 endpoint identification (name match; record exact endpoint strings into [03 §1](../03-device-ddj-flx4.md#1-device-facts) — resolves its ⏳)
-- [ ] Hot-plug: endpoint added/removed notifications → connected/disconnected state publisher (FR-4)
-- [ ] MIDI output path: send raw messages to the device (FR-5 groundwork)
+- [x] Add MIDIKit via SPM — now **SwiftMIDI** (`orchetect/swift-midi`, pinned from 1.1.0; MIDIKit rebranded at 1.0, see ADR-003 update). MIT license — add to About credits when About ships (M4)
+- [x] MIDIEngine: manager lifecycle, input connection, typed event callback (FR-2) — `DeckPad/MIDIEngine/MIDIEngine.swift`
+- [x] FLX4 endpoint identification (recorded in [03 §1](../03-device-ddj-flx4.md#1-device-facts): name `DDJ-FLX4`, mfr `AlphaTheta Corporation`)
+- [x] Hot-plug: endpoint added/removed notifications → connected/disconnected state publisher (FR-4) — live-verify during capture session
+- [x] MIDI output path: send raw messages to the device (FR-5 groundwork; first real use is LED pass e)
 
 ### DeviceLayer
-- [ ] `DeviceDescriptor` protocol + data-driven `DDJFLX4Descriptor` shell (table-based, per [03 §6](../03-device-ddj-flx4.md#6-descriptor-implementation-notes))
+- [x] `DeviceDescriptor` protocol + data-driven `DDJFLX4Descriptor` shell (table-based, per [03 §6](../03-device-ddj-flx4.md#6-descriptor-implementation-notes)) — decode table generated after capture
 - [ ] Decoders: note→pressed/released, CC→value, MSB/LSB pairing for 14-bit (FR-2), relative decode for jogs/encoder, SHIFT-variant merging, jog-touch tracking (FR-3, FR-12 groundwork)
 - [ ] Unknown-message policy: log once per session, drop (NFR-3)
 
 ### MIDI monitor (FR-6)
-- [ ] Monitor window: live stream table (time, raw, decoded, value), pause/clear, basic filters ([05 §7](../05-ui-spec.md#7-midi-monitor-debug) — functional now, pretty in M4)
-- [ ] **Capture mode:** checklist walker over the [03 §2](../03-device-ddj-flx4.md#2-control-inventory) inventory order; records observation per prompt; exports Markdown table + raw `flx4-capture.json`
+- [x] Monitor window: live stream table (time, raw, decoded), pause/clear ([05 §7](../05-ui-spec.md#7-midi-monitor-debug) — functional now; filters + polish in M4)
+- [x] **Capture mode:** checklist walker over the [03 §2](../03-device-ddj-flx4.md#2-control-inventory) inventory order; records observation per prompt; exports Markdown table + raw `flx4-capture.json`
 
 ### Capture session (with the physical unit)
 - [ ] Pass a: every control, base layer

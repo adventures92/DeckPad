@@ -47,6 +47,7 @@ Technical twin of D-002. **Decision.** Hardened Runtime on, App Sandbox off, no 
 **Context.** Raw CoreMIDI is a C API with manual packet parsing (and MIDI 1.0/2.0 UMP duality). [MIDIKit](https://github.com/orchetect/MIDIKit) (MIT) provides typed Swift events, endpoint identity persistence, and hot-plug notifications.
 **Decision.** Depend on MIDIKit (SPM). MIDIEngine wraps it so MIDIKit types never leak past that module.
 **Consequences.** One third-party dependency (vendored risk accepted; MIT license, actively maintained). If it stagnates, MIDIEngine's surface is small enough to reimplement on CoreMIDI directly.
+**Update (M1, 2026-08-18).** MIDIKit rebranded to **SwiftMIDI** at 1.0: repo is now `orchetect/swift-midi`, umbrella product/module `SwiftMIDI`. DeckPad pins `swift-midi` from 1.1.0. Everything else in this ADR stands.
 
 ## ADR-004: Device map is captured, not guessed
 

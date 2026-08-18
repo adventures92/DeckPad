@@ -2,23 +2,32 @@
 //  MenuBarView.swift
 //  DeckPad
 //
-//  M0 placeholder menu. Live device status arrives in M1, profile submenu and
-//  suspend toggle in M3, final icon states in M4 (docs/05-ui-spec.md §8).
+//  Menu-bar menu. Live device status via MIDIEngine (M1); profile submenu
+//  and suspend toggle land in M3, final icon states in M4
+//  (docs/05-ui-spec.md §8).
 //
 
 import SwiftUI
 
 struct MenuBarView: View {
     @Environment(\.openWindow) private var openWindow
+    @ObservedObject private var engine = MIDIEngine.shared
 
     var body: some View {
-        Text("DDJ-FLX4: not connected")
+        Text(engine.isConnected
+            ? "DDJ-FLX4: connected"
+            : "DDJ-FLX4: not connected")
 
         Divider()
 
         Button("Open DeckPad") {
             ServiceController.shared.enterActiveUI()
             openWindow(id: WindowID.main)
+        }
+
+        Button("MIDI Monitor") {
+            ServiceController.shared.enterActiveUI()
+            openWindow(id: WindowID.monitor)
         }
 
         Divider()

@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DA0000000000000000000003 /* SwiftMIDI in Frameworks */ = {isa = PBXBuildFile; productRef = DA0000000000000000000002 /* SwiftMIDI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		6CDB4CD63034425900C24621 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA0000000000000000000003 /* SwiftMIDI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = "DeckPad";
 			packageProductDependencies = (
+				DA0000000000000000000002 /* SwiftMIDI */,
 			);
 			productName = "DeckPad";
 			productReference = 6CDB4CC63034425800C24621 /* DeckPad.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 6CDB4CBD3034425800C24621;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DA0000000000000000000001 /* XCRemoteSwiftPackageReference "swift-midi" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6CDB4CC73034425800C24621 /* Products */;
 			projectDirPath = "";
@@ -565,6 +574,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DA0000000000000000000001 /* XCRemoteSwiftPackageReference "swift-midi" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/orchetect/swift-midi";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DA0000000000000000000002 /* SwiftMIDI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA0000000000000000000001 /* XCRemoteSwiftPackageReference "swift-midi" */;
+			productName = SwiftMIDI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6CDB4CBE3034425800C24621 /* Project object */;
 }

@@ -1,0 +1,87 @@
+{
+  "originHash" : "7562609b3d6d02636e35ee21e461dc1a5ababe8042f27a203d9f10501ab21eed",
+  "pins" : [
+    {
+      "identity" : "swift-data-parsing",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/orchetect/swift-data-parsing",
+      "state" : {
+        "revision" : "b5c4d0455151c30069bb435e86a7cafa937c6e47",
+        "version" : "0.1.2"
+      }
+    },
+    {
+      "identity" : "swift-midi",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/orchetect/swift-midi",
+      "state" : {
+        "revision" : "17e72aa3b73b05d195481dd72c05bc91433be119",
+        "version" : "1.1.0"
+      }
+    },
+    {
+      "identity" : "swift-midi-controlsurfaces",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/orchetect/swift-midi-controlsurfaces",
+      "state" : {
+        "revision" : "073603ccf4f34ed087999e7ed7dfca5770d45fc0",
+        "version" : "1.0.1"
+      }
+    },
+    {
+      "identity" : "swift-midi-core",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/orchetect/swift-midi-core",
+      "state" : {
+        "revision" : "9b2c7ba5d651e9225c40759e8ba93186412593a6",
+        "version" : "1.0.1"
+      }
+    },
+    {
+      "identity" : "swift-midi-file",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/orchetect/swift-midi-file",
+      "state" : {
+        "revision" : "b50c08837d21f9b6533730806d9a5822616615a5",
+        "version" : "1.0.1"
+      }
+    },
+    {
+      "identity" : "swift-midi-io",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/orchetect/swift-midi-io",
+      "state" : {
+        "revision" : "54ac94028e3825bd8e622d373b0698d196927212",
+        "version" : "1.1.0"
+      }
+    },
+    {
+      "identity" : "swift-midi-sync",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/orchetect/swift-midi-sync",
+      "state" : {
+        "revision" : "74ea63824304a5b90d2f33159213155636065007",
+        "version" : "1.0.1"
+      }
+    },
+    {
+      "identity" : "swift-midi-ui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/orchetect/swift-midi-ui",
+      "state" : {
+        "revision" : "7fca9915d706d1dc28d3d9b8c9c4b6cd63d0ac40",
+        "version" : "1.1.0"
+      }
+    },
+    {
+      "identity" : "swift-timecode",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/orchetect/swift-timecode",
+      "state" : {
+        "revision" : "63a152cea4817e094a7be22e82414f60a77baae0",
+        "version" : "3.1.4"
+      }
+    }
+  ],
+  "version" : 3
+}

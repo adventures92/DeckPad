@@ -16,6 +16,11 @@ struct DeckPadApp: App {
         .windowStyle(.hiddenTitleBar)
         .defaultSize(width: 1080, height: 640)
 
+        Window("MIDI Monitor", id: WindowID.monitor) {
+            MonitorView()
+        }
+        .defaultSize(width: 940, height: 560)
+
         MenuBarExtra("DeckPad", systemImage: "dial.medium") {
             MenuBarView()
         }
@@ -24,11 +29,13 @@ struct DeckPadApp: App {
 
 enum WindowID {
     static let main = "main"
+    static let monitor = "monitor"
 }
 
 final class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ notification: Notification) {
         ServiceController.shared.start()
+        MIDIEngine.shared.start()
     }
 
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {

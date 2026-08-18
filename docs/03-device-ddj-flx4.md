@@ -14,7 +14,7 @@ The single supported device in v1. This document is the source of truth for the 
 | Class compliance | USB class-compliant MIDI — no driver needed on macOS |
 | MIDI direction | Bidirectional: sends control input; receives LED/display messages |
 | Audio | Built-in audio interface — **explicitly unused** by DeckPad (non-goal, [01-requirements.md §4](01-requirements.md#4-explicit-non-goals-v1)) |
-| Identification | Match CoreMIDI endpoint by name containing `DDJ-FLX4` (exact string ⏳ verify in M1) |
+| Identification | ✅ Confirmed on hardware (M1): endpoint name `DDJ-FLX4`, display name `DDJ-FLX4`, manufacturer `AlphaTheta Corporation`, model `DDJ-FLX4` — one source + one destination |
 
 ## 2. Control inventory
 
