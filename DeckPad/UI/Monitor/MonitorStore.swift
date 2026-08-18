@@ -25,7 +25,8 @@ final class MonitorStore: ObservableObject {
 
     func append(_ packet: RawMIDIPacket) {
         guard !isPaused else { return }
-        let decoded = descriptor.decode(packet.message).map { String(describing: $0) }
+        let events = descriptor.decode(packet.message)
+        let decoded = events.isEmpty ? nil : events.map(\.monitorDisplay).joined(separator: "  ")
         rows.append(MonitorRow(time: packet.receivedAt, raw: packet.message.display, decoded: decoded))
         if rows.count > Self.capacity {
             rows.removeFirst(rows.count - Self.capacity)
@@ -34,5 +35,21 @@ final class MonitorStore: ObservableObject {
 
     func clear() {
         rows.removeAll()
+    }
+}
+
+extension ControlEvent {
+    /// Compact monitor-column rendering, e.g. "deck1.play ↓ ⇧" or "mixer.crossfader = 0.531".
+    var monitorDisplay: String {
+        switch self {
+        case let .pressed(id, shifted):
+            return "\(id) ↓\(shifted ? " ⇧" : "")"
+        case let .released(id, shifted):
+            return "\(id) ↑\(shifted ? " ⇧" : "")"
+        case let .value(id, value, shifted):
+            return "\(id) = \(String(format: "%.3f", value))\(shifted ? " ⇧" : "")"
+        case let .relative(id, ticks, touched, shifted):
+            return "\(id) \(ticks > 0 ? "+" : "")\(ticks)\(touched ? " ✋" : "")\(shifted ? " ⇧" : "")"
+        }
     }
 }

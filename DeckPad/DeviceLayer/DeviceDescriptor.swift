@@ -5,6 +5,10 @@
 //  The device seam (docs/02-architecture.md): everything device-specific
 //  lives behind this protocol. v1 ships exactly one descriptor (DDJ-FLX4).
 //
+//  Decoding is stateful (SHIFT tracking, jog-touch tracking, 14-bit MSB
+//  latching), so descriptors are reference types. MainActor-isolated for
+//  now; M3 moves decoding onto the Dispatcher queue.
+//
 
 import Foundation
 
@@ -17,14 +21,15 @@ nonisolated struct ControlSpec: Identifiable, Sendable, Equatable {
     let name: String
 }
 
-nonisolated protocol DeviceDescriptor: Sendable {
+protocol DeviceDescriptor: AnyObject {
     /// Substring that identifies the device's CoreMIDI endpoints.
     static var endpointNameMarker: String { get }
 
     /// Full mappable-control inventory, in capture/checklist order.
     var controls: [ControlSpec] { get }
 
-    /// Raw MIDI → semantic event. Returns nil for unknown messages.
-    /// The DDJ-FLX4 table is generated from the M1 capture session (ADR-004).
-    func decode(_ message: RawMIDIMessage) -> ControlEvent?
+    /// Raw MIDI → semantic events. Empty for unknown messages (logged and
+    /// dropped upstream, NFR-3). May update internal layer state (SHIFT,
+    /// jog touch, MSB latches) as a side effect.
+    func decode(_ message: RawMIDIMessage) -> [ControlEvent]
 }

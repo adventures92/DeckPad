@@ -14,25 +14,25 @@
 
 ### DeviceLayer
 - [x] `DeviceDescriptor` protocol + data-driven `DDJFLX4Descriptor` shell (table-based, per [03 §6](../03-device-ddj-flx4.md#6-descriptor-implementation-notes)) — decode table generated after capture
-- [ ] Decoders: note→pressed/released, CC→value, MSB/LSB pairing for 14-bit (FR-2), relative decode for jogs/encoder, SHIFT-variant merging, jog-touch tracking (FR-3, FR-12 groundwork)
-- [ ] Unknown-message policy: log once per session, drop (NFR-3)
+- [x] Decoders: note→pressed/released (noteOn vel 0 = release), 14-bit MSB/LSB pairing (FR-2), 64-centered jog + two's-complement encoder relative decode, SHIFT tracking + variant-number merging, jog-touch tracking, mode-agnostic pad ranges (FR-3, FR-12 groundwork)
+- [x] Unknown-message policy: decode to nothing, drop; monitor still displays raw (NFR-3)
 
 ### MIDI monitor (FR-6)
 - [x] Monitor window: live stream table (time, raw, decoded), pause/clear ([05 §7](../05-ui-spec.md#7-midi-monitor-debug) — functional now; filters + polish in M4)
 - [x] **Capture mode:** checklist walker over the [03 §2](../03-device-ddj-flx4.md#2-control-inventory) inventory order; records observation per prompt; exports Markdown table + raw `flx4-capture.json`
 
 ### Capture session (with the physical unit)
-- [ ] Pass a: every control, base layer
-- [ ] Pass b: every control with SHIFT held
-- [ ] Pass c: continuous full-range sweeps (confirm 14-bit pairing, end values)
-- [ ] Pass d: jog — touched turn / rim turn / touch only
-- [ ] Pass e: LED experiments per [03 §4](../03-device-ddj-flx4.md#4-led-output-protocol-capture-pending) (button LEDs, pad RGB palette, echo behavior, rate limits)
-- [ ] Populate [03 §3](../03-device-ddj-flx4.md#3-midi-map-table-capture-pending) + new LED map section; resolve/correct every ⏳ in §2 (loop section, master/headphone knobs analog?, effects section); update totals if inventory changed
-- [ ] Cross-check vs. Pioneer MIDI list PDF + Mixxx mapping; note discrepancies inline
-- [ ] Commit `docs/fixtures/flx4-capture.json`; generate descriptor table (Swift) from the captured data
+- [x] Pass a: every control, base layer (2026-08-18; all 64 controls MIDI-visible — even the "maybe analog" master/headphone knobs)
+- [ ] Pass b: every control with SHIFT held → confirms/corrects the ® provisional values in [03 §3](../03-device-ddj-flx4.md#3-midi-map-captured-base-layer---reference-sourced-shift-variant-pending-pass-b)
+- [x] Pass c: continuous full-range sweeps — 14-bit MSB/LSB (+0x20 rule) confirmed on every knob/fader/slider
+- [x] Pass d: jog — touched/rim/touch-only captured (vinyl-off CC `0x23` still to confirm; see 03 §3.1)
+- [ ] Pass e: LED experiments per [03 §4](../03-device-ddj-flx4.md#4-led-output-protocol-pass-e--pending) (echo rule, pad ranges, VU meters, SysEx position query, rate limits)
+- [x] Populate [03 §3](../03-device-ddj-flx4.md) with captured base map; §2 ⏳ resolved (loop section confirmed; master/hp knobs are MIDI; FX section confirmed)
+- [x] Cross-check vs. Mixxx mapping — capture only *added* controls (masterLevel, hpLevel, smartCX/Fader, FX LSB); Pioneer PDF is bot-gated, URL recorded in 03 §5
+- [x] Commit `docs/fixtures/flx4-capture.json`; descriptor decode tables generated from capture (`DDJFLX4Descriptor.buildDecodeTables()`)
 
 ### Tests
-- [ ] DeviceLayer unit tests replaying `flx4-capture.json` fixture → expected ControlEvents (incl. 14-bit, shift, jog cases)
+- [x] DeviceLayer unit tests: 12 decoder tests + fixture replay (`FLX4DecoderTests`, `FLX4FixtureReplayTests`) — every captured message decodes, buttons map to documented ControlIDs; runs without hardware
 
 ## Acceptance criteria
 - Roadmap demo: monitor streams named ControlEvents live from the hardware; unplug/replug mid-stream recovers without restart.
