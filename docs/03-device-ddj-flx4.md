@@ -68,11 +68,13 @@ Note = mode base + (pad − 1). Captured in Sampler mode; other bases from refer
 
 | Pad mode | Note range |
 |---|---|
-| Hot Cue | ✅ `0x00`–`0x07` (captured, Pass B) |
-| Pad FX | ® `0x10`–`0x17` |
-| Beat Jump | ® `0x20`–`0x27` |
-| Sampler | ✅ `0x30`–`0x37` (captured, Pass A) |
-| Keyboard / Beat Loop / Key Shift (2nd layer) | ® `0x40`– / `0x60`– / `0x70`– |
+| Hot Cue | ✅ `0x00`–`0x07` (Pass B) |
+| Pad FX | ✅ `0x10`–`0x17` (targeted capture) |
+| Beat Jump | ✅ `0x20`–`0x27` (targeted capture) |
+| Sampler | ✅ `0x30`–`0x37` (Pass A) |
+| Keyboard / Beat Loop / Key Shift (2nd layer) | ✅ `0x40`– / `0x60`– / `0x70`– (targeted capture) |
+
+All seven ranges empirically verified 2026-08-18.
 
 ### 3.3 Mixer
 
@@ -114,20 +116,33 @@ Note = mode base + (pad − 1). Captured in Sampler mode; other bases from refer
 1. Some pad Note On rows are missing from the aggregates (collection-window timing); note numbers confirmed by the contiguous range patterns across both passes.
 2. `deck1.play` SHIFT entry caught only the SHIFT press itself (window artifact); `0x0E` confirmed via deck 2 symmetry.
 3. CUE/LOOP CALL ◀/▶ were missed in the original inventory (wrongly assumed DDJ-400-only); captured via targeted sniffer 2026-08-18 — reference values confirmed. The raw sniff also confirmed the hardware sends releases as note-on velocity 0 (SwiftMIDI normalizes these to note-off).
-4. `0x23` (vinyl-off platter turn) pending confirmation — toggle vinyl mode off and turn the platter. Decoder already maps it either way.
+4. **Remaining reference-only (®) values, accepted as-is:** `0x23` vinyl-off platter turn (no hardware vinyl toggle found; decoder maps it anyway), `0x5C` sync long-press (documented only, undecoded), and the ch 15 track-load LED animation. None block any feature.
 
-## 4. LED output protocol (pass E — pending)
+## 4. LED output protocol (captured, pass E — 2026-08-18)
 
-Reference expectations to verify against hardware (from the Mixxx mapping; all output is host-driven):
+Verified against hardware, interactively. The unit has **two LED classes** with different rules:
 
-1. **Echo rule:** send the control's own (status, note) with velocity `0x7F` to light, `0x00` to extinguish — no RGB palette; strictly on/off.
-2. Pads light per pad-mode range and channel (incl. SHIFT channels 8/10 as separate LED layers).
-3. **VU meters:** CC `0x02` on ch 0/1, value 0–127.
-4. Track-load animation: Note ch 15, note = deck index, vel `0x7F`.
-5. Blinking is host-driven (timers), not firmware.
-6. A keep-alive/position-query SysEx `F0 00 40 05 00 00 04 05 00 50 02 F7` reportedly makes the unit report all analog control positions — useful for soft-takeover initialization; verify.
+### 4.1 Simple button LEDs — work anytime (standalone included)
 
-Record verified results in a `## LED map` table here after the pass.
+Echo rule confirmed: send the control's own input (status, note) with velocity `0x7F` to light, `0x00` to extinguish. Verified: `deckN.play`, `deckN.cue`, `deckN.sync` (steady), `mixer.smartCX`, `mixer.smartFader` (steady), `fx.onOff` (**lights but blinks under host control** — firmware quirk). **`browser.load1/2` have no LEDs at all.** No handshake needed for this class.
+
+### 4.2 Pad matrix + mode indicators — host-controlled mode only
+
+- Pad LEDs (and pad-mode indicator behavior) respond **only while the keep-alive SysEx streams**: `F0 00 40 05 00 00 04 05 00 50 02 F7` at ~200 ms cadence. A single SysEx does nothing; when the stream stops, the unit reverts to standalone and host-lit pads/mode LEDs go dark.
+- Entering host mode lights the HOT CUE mode indicators on both decks (firmware default state).
+- Pad writes must use the note range of the deck's **currently active pad mode** (writes in other ranges are ignored). DeckPad must track mode-button presses (visible as input) to know which range renders.
+- **Velocity is effectively binary**: mid velocities (8–80) don't visibly light; use `0x7F`/`0x00` only. Color is the firmware's per-mode palette (Hot Cue = orange); no host RGB control discovered — matches the community mapping.
+
+### 4.3 Channel level meters
+
+CC `0x02` on ch 0 (left) / ch 1 (right), value 0–127 → 5-segment bar (64 ≈ top of green). **Firmware decays the meters within a few seconds** — hold a level by refreshing continuously.
+
+### 4.4 Implications for FeedbackCenter (M5)
+
+1. Run the keep-alive timer whenever LED feedback is enabled; stop it on suspend/coexistence-pause (LEDs revert on their own).
+2. Track each deck's active pad mode; write ambient pad state in that range; re-assert the full LED scene on mode change, reconnect, and profile switch.
+3. Treat all LEDs as binary. Meters need continuous refresh if used as a value display.
+4. Not yet explored (non-blocking, extend during M5): per-mode pad palette colors, SHIFT-channel (8/10) LED layers, track-load animation (ch 15 ®), throughput limits beyond the 200 ms cadence used here.
 
 ## 5. Capture methodology & status
 
@@ -138,9 +153,10 @@ Tooling: DeckPad's MIDI monitor **capture mode** ([05-ui-spec.md §7](05-ui-spec
 | a — base layer, every control | ✅ 2026-08-18 |
 | b — SHIFT layer | ✅ 2026-08-18 — all reference values confirmed; new: load/beat/smart SHIFT variants, fader-start aux notes |
 | b2 — CUE/LOOP CALL targeted capture | ✅ 2026-08-18 (base + SHIFT, both decks) |
+| b3 — pad-mode note ranges targeted capture | ✅ 2026-08-18 (all 7 ranges empirical) |
 | c — continuous full-range sweeps / 14-bit confirmation | ✅ (within pass a) |
 | d — jog touched/rim/touch-only | ✅ (both passes; vinyl-off `0x23` open) |
-| e — LED experiments | ⏳ pending |
+| e — LED experiments | ✅ 2026-08-18 (interactive session; see §4) |
 
 Cross-references: Pioneer DJ official *DDJ-FLX4 MIDI message list* PDF (`pioneerdj.com/-/media/pioneerdj/software-info/controller/ddj-flx4/ddj-flx4_midi_message_list_e1.pdf` — bot-gated, open in a browser) and the Mixxx mapping (`mixxxdj/mixxx` → `res/controllers/Pioneer-DDJ-FLX4.midi.xml` + script). Capture disagreed with the community map only by *adding* controls (master level, hp level, Smart CX/Fader, FX level LSB).
 

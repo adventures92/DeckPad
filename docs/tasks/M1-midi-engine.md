@@ -23,10 +23,11 @@
 
 ### Capture session (with the physical unit)
 - [x] Pass a: every control, base layer (2026-08-18; all 64 controls MIDI-visible — even the "maybe analog" master/headphone knobs)
-- [ ] Pass b: every control with SHIFT held → confirms/corrects the ® provisional values in [03 §3](../03-device-ddj-flx4.md#3-midi-map-captured-base-layer---reference-sourced-shift-variant-pending-pass-b)
+- [x] Pass b: every control with SHIFT held — all reference values confirmed + new captured-only mappings (load/beat/smart SHIFT variants, fader-start aux notes)
+- [x] Pass b2/b3 (targeted sniffer): CUE/LOOP CALL buttons (base + SHIFT) and all 7 pad-mode note ranges
 - [x] Pass c: continuous full-range sweeps — 14-bit MSB/LSB (+0x20 rule) confirmed on every knob/fader/slider
 - [x] Pass d: jog — touched/rim/touch-only captured (vinyl-off CC `0x23` still to confirm; see 03 §3.1)
-- [ ] Pass e: LED experiments per [03 §4](../03-device-ddj-flx4.md#4-led-output-protocol-pass-e--pending) (echo rule, pad ranges, VU meters, SysEx position query, rate limits)
+- [x] Pass e: LED experiments (interactive session) — two LED classes found: simple buttons obey the echo rule anytime; the pad matrix needs a continuous ~200 ms keep-alive SysEx and mode-matched note ranges; meters decay and need refresh; LOAD buttons have no LEDs. Full protocol: [03 §4](../03-device-ddj-flx4.md#4-led-output-protocol-captured-pass-e--2026-08-18)
 - [x] Populate [03 §3](../03-device-ddj-flx4.md) with captured base map; §2 ⏳ resolved (loop section confirmed; master/hp knobs are MIDI; FX section confirmed)
 - [x] Cross-check vs. Mixxx mapping — capture only *added* controls (masterLevel, hpLevel, smartCX/Fader, FX LSB); Pioneer PDF is bot-gated, URL recorded in 03 §5
 - [x] Commit `docs/fixtures/flx4-capture.json`; descriptor decode tables generated from capture (`DDJFLX4Descriptor.buildDecodeTables()`)
@@ -35,6 +36,6 @@
 - [x] DeviceLayer unit tests: 12 decoder tests + fixture replay (`FLX4DecoderTests`, `FLX4FixtureReplayTests`) — every captured message decodes, buttons map to documented ControlIDs; runs without hardware
 
 ## Acceptance criteria
-- Roadmap demo: monitor streams named ControlEvents live from the hardware; unplug/replug mid-stream recovers without restart.
-- Zero ⏳ markers remain in [03-device-ddj-flx4.md](../03-device-ddj-flx4.md); its capture-pending note is deleted.
-- Fixture-driven tests green without hardware attached.
+- [x] Roadmap demo: monitor streams named ControlEvents live from the hardware (decoded column verified during capture sessions); unplug/replug recovers without restart (verified end of capture session).
+- [x] No placeholder markers remain in [03-device-ddj-flx4.md](../03-device-ddj-flx4.md); the only ® reference-only values left are explicitly enumerated and accepted (vinyl-off jog CC, sync long-press, track-load LED animation — none block features).
+- [x] Fixture-driven tests green without hardware attached (158-entry fixture, 15 tests).

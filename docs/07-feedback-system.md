@@ -32,10 +32,11 @@ A wider capsule at bottom-center (Raycast-toast position), above the Dock.
 
 Closes the loop on the hardware itself. Depends on the M1 LED capture ([03-device-ddj-flx4.md §4](03-device-ddj-flx4.md#4-led-output-protocol-capture-pending)).
 
-- **Ambient state:** mapped pads lit dim in a per-category color (from the captured palette); unmapped controls dark. Refreshed on profile switch — the hardware shows which pads do something *in the current profile*.
-- **Trigger flash:** actuated control's LED flashes bright 150 ms, then returns to ambient.
-- **Suspend/pause:** all LEDs off (visual confirmation DeckPad is inert).
-- **Budget:** LED frames coalesced ≤ 30 fps; full-surface refresh is a single batched frame (rate-limit findings from M1 apply).
+- **Keep-alive:** the FLX4's pad LEDs only obey while a keep-alive SysEx streams (~200 ms cadence, captured in M1 — [03 §4.2](03-device-ddj-flx4.md#42-pad-matrix--mode-indicators--host-controlled-mode-only)). FeedbackCenter runs that timer whenever LED feedback is enabled.
+- **Ambient state:** mapped controls lit, unmapped dark — strictly binary (the hardware offers no host color/brightness control; pad color is the firmware's per-mode palette). Pads are addressed in the deck's *active pad-mode* note range; the scene re-asserts on profile switch, pad-mode change, and reconnect.
+- **Trigger flash:** actuated control's LED inverts for 150 ms (blink), then returns to ambient.
+- **Suspend/pause:** keep-alive stops — the unit reverts to standalone and darkens its own pads; simple button LEDs are explicitly cleared.
+- **Budget:** LED frames coalesced ≤ 30 fps; full-surface refresh is a single batched frame. The 200 ms keep-alive cadence is proven; higher throughput untested ([03 §4.4](03-device-ddj-flx4.md#44-implications-for-feedbackcenter-m5)).
 
 ## 2. Event → feedback pipeline
 

@@ -4,7 +4,7 @@
 
 DeckPad is a native macOS app (SwiftUI, macOS 26+, Liquid Glass design) that repurposes a Pioneer DJ **DDJ-FLX4** as a programmable input device. Map any pad or button to keyboard shortcuts, Shortcuts, shell commands, or app actions; ride the faders for system volume and screen brightness; scroll and scrub with the jog wheels. Once configured, DeckPad lives in the menu bar as a background service — with feedback via a notch toast, a floating pill, sounds, or the controller's own LEDs.
 
-> **Status:** [M0 — Foundation](docs/tasks/M0-foundation.md) complete — the project builds and runs as DeckPad (menu-bar shell, sandbox off, module skeleton). Next up: [M1 — MIDI engine](docs/tasks/M1-midi-engine.md).
+> **Status:** [M1 — MIDI engine](docs/tasks/M1-midi-engine.md) complete — the DDJ-FLX4 is fully mapped from the physical hardware (input map, SHIFT layer, LED protocol), decoded live by the DeviceLayer, and regression-tested from a captured fixture. Next up: [M2 — Action engine](docs/tasks/M2-action-engine.md).
 
 ## Documentation
 
