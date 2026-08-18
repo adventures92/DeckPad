@@ -130,6 +130,60 @@
       "skipped": false
     },
     {
+      "control": "deck1.cueLoopLeft",
+      "observations": [
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 81,
+          "type": "noteOn"
+        },
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 0,
+          "lastValue": 0,
+          "maxValue": 0,
+          "minValue": 0,
+          "number": 81,
+          "type": "noteOff"
+        }
+      ],
+      "pass": "base",
+      "skipped": false
+    },
+    {
+      "control": "deck1.cueLoopRight",
+      "observations": [
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 83,
+          "type": "noteOn"
+        },
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 0,
+          "lastValue": 0,
+          "maxValue": 0,
+          "minValue": 0,
+          "number": 83,
+          "type": "noteOff"
+        }
+      ],
+      "pass": "base",
+      "skipped": false
+    },
+    {
       "control": "deck1.jog",
       "observations": [
         {
@@ -765,6 +819,60 @@
           "minValue": 127,
           "number": 12,
           "type": "noteOn"
+        }
+      ],
+      "pass": "base",
+      "skipped": false
+    },
+    {
+      "control": "deck2.cueLoopLeft",
+      "observations": [
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 81,
+          "type": "noteOn"
+        },
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 0,
+          "lastValue": 0,
+          "maxValue": 0,
+          "minValue": 0,
+          "number": 81,
+          "type": "noteOff"
+        }
+      ],
+      "pass": "base",
+      "skipped": false
+    },
+    {
+      "control": "deck2.cueLoopRight",
+      "observations": [
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 83,
+          "type": "noteOn"
+        },
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 0,
+          "lastValue": 0,
+          "maxValue": 0,
+          "minValue": 0,
+          "number": 83,
+          "type": "noteOff"
         }
       ],
       "pass": "base",
@@ -2202,6 +2310,60 @@
       "skipped": false
     },
     {
+      "control": "deck1.cueLoopLeft",
+      "observations": [
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 62,
+          "type": "noteOn"
+        },
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 0,
+          "lastValue": 0,
+          "maxValue": 0,
+          "minValue": 0,
+          "number": 62,
+          "type": "noteOff"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck1.cueLoopRight",
+      "observations": [
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 61,
+          "type": "noteOn"
+        },
+        {
+          "channel": 0,
+          "count": 1,
+          "firstValue": 0,
+          "lastValue": 0,
+          "maxValue": 0,
+          "minValue": 0,
+          "number": 61,
+          "type": "noteOff"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
       "control": "deck1.jog",
       "observations": [
         {
@@ -2760,6 +2922,60 @@
           "minValue": 127,
           "number": 72,
           "type": "noteOn"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck2.cueLoopLeft",
+      "observations": [
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 62,
+          "type": "noteOn"
+        },
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 0,
+          "lastValue": 0,
+          "maxValue": 0,
+          "minValue": 0,
+          "number": 62,
+          "type": "noteOff"
+        }
+      ],
+      "pass": "shift",
+      "skipped": false
+    },
+    {
+      "control": "deck2.cueLoopRight",
+      "observations": [
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 127,
+          "lastValue": 127,
+          "maxValue": 127,
+          "minValue": 127,
+          "number": 61,
+          "type": "noteOn"
+        },
+        {
+          "channel": 1,
+          "count": 1,
+          "firstValue": 0,
+          "lastValue": 0,
+          "maxValue": 0,
+          "minValue": 0,
+          "number": 61,
+          "type": "noteOff"
         }
       ],
       "pass": "shift",

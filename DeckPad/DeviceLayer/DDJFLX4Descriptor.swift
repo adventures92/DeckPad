@@ -23,8 +23,8 @@
 //  - SHIFT-variant numbers captured in Pass B (2026-08-18) — every
 //    reference-sourced value confirmed, plus captured-only additions the
 //    community map lacks (load/beat/smart SHIFT variants, fader-start).
-//  - CUE/LOOP CALL ◀/▶ numbers are provisional (reference) until their
-//    targeted capture completes.
+//  - CUE/LOOP CALL ◀/▶ captured via targeted sniffer (2026-08-18):
+//    base 0x51/0x53, SHIFT 0x3E/0x3D, per deck channel.
 //
 //  Endpoint identity confirmed (M1): name "DDJ-FLX4",
 //  manufacturer "AlphaTheta Corporation", model "DDJ-FLX4".
@@ -189,7 +189,7 @@ final class DDJFLX4Descriptor: DeviceDescriptor {
             note(ch, 0x36, "\(d).jogTouch", deck: deck)
             note(ch, 0x54, "mixer.ch\(deck + 1).cue", deck: deck)
 
-            // CUE/LOOP CALL ◀/▶ — provisional (reference), targeted capture pending
+            // CUE/LOOP CALL ◀/▶ (captured via targeted sniffer 2026-08-18)
             note(ch, 0x51, "\(d).cueLoopLeft", deck: deck)
             note(ch, 0x53, "\(d).cueLoopRight", deck: deck)
             note(ch, 0x3E, "\(d).cueLoopLeft", shift: true, deck: deck)

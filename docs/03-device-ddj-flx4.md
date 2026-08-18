@@ -52,8 +52,8 @@ The firmware also emits **auxiliary trigger notes** with no dedicated physical c
 | `deckN.loopIn` | Note | `0x10` 16 | `0x4C` 76 |
 | `deckN.loopOut` | Note | `0x11` 17 | `0x4E` 78 |
 | `deckN.reloopExit` | Note | `0x4D` 77 | `0x50` 80 |
-| `deckN.cueLoopLeft` | Note | ® `0x51` 81 | ® `0x3E` 62 — **targeted capture in progress** |
-| `deckN.cueLoopRight` | Note | ® `0x53` 83 | ® `0x3D` 61 — **targeted capture in progress** |
+| `deckN.cueLoopLeft` | Note | `0x51` 81 | `0x3E` 62 |
+| `deckN.cueLoopRight` | Note | `0x53` 83 | `0x3D` 61 |
 | `deckN.tempo` | CC 14-bit | MSB `0x00` / LSB `0x20` | same numbers (SHIFT tracked by state) |
 | `deckN.jogTouch` | Note | `0x36` 54 | `0x67` 103 |
 | `deckN.jog` (platter) | CC relative | `0x22` 34 touched · `0x23` 35 ® untouched (unit was in vinyl mode both passes) | CC `0x29` 41 |
@@ -113,8 +113,8 @@ Note = mode base + (pad − 1). Captured in Sampler mode; other bases from refer
 
 1. Some pad Note On rows are missing from the aggregates (collection-window timing); note numbers confirmed by the contiguous range patterns across both passes.
 2. `deck1.play` SHIFT entry caught only the SHIFT press itself (window artifact); `0x0E` confirmed via deck 2 symmetry.
-3. **CUE/LOOP CALL ◀/▶ exist on the unit but were missed in the original inventory** (wrongly assumed DDJ-400-only). Targeted capture in progress; ® values above from reference.
-4. `0x23` (vinyl-off platter turn) pending confirmation — toggle vinyl mode off and turn the platter.
+3. CUE/LOOP CALL ◀/▶ were missed in the original inventory (wrongly assumed DDJ-400-only); captured via targeted sniffer 2026-08-18 — reference values confirmed. The raw sniff also confirmed the hardware sends releases as note-on velocity 0 (SwiftMIDI normalizes these to note-off).
+4. `0x23` (vinyl-off platter turn) pending confirmation — toggle vinyl mode off and turn the platter. Decoder already maps it either way.
 
 ## 4. LED output protocol (pass E — pending)
 
@@ -137,7 +137,7 @@ Tooling: DeckPad's MIDI monitor **capture mode** ([05-ui-spec.md §7](05-ui-spec
 |---|---|
 | a — base layer, every control | ✅ 2026-08-18 |
 | b — SHIFT layer | ✅ 2026-08-18 — all reference values confirmed; new: load/beat/smart SHIFT variants, fader-start aux notes |
-| b2 — CUE/LOOP CALL targeted capture | ⏳ in progress (missed in original inventory) |
+| b2 — CUE/LOOP CALL targeted capture | ✅ 2026-08-18 (base + SHIFT, both decks) |
 | c — continuous full-range sweeps / 14-bit confirmation | ✅ (within pass a) |
 | d — jog touched/rim/touch-only | ✅ (both passes; vinyl-off `0x23` open) |
 | e — LED experiments | ⏳ pending |
