@@ -73,12 +73,16 @@ enum ControlEvent {
 enum Trigger: Codable { case press, release, doubleTap, hold(ms: Int), toggle, continuous, relative }
 
 /// See 06-actions-catalog.md for the full Action enum surface.
-struct Mapping: Codable {
+struct Mapping: Codable, Identifiable {
+    var id: UUID
     var control: ControlID
     var shiftLayer: Bool           // false = base layer, true = SHIFT held
     var trigger: Trigger
     var action: Action
-    var feedback: FeedbackOverride // .inherit / .on(channels) / .off
+    var releaseAction: Action?     // fired on release after a .hold fires (06 §9)
+    var secondaryAction: Action?   // the alternate action for .toggle (06 §9)
+    var jumpImmediately: Bool      // continuous: bypass soft-takeover pickup (06 §7)
+    var feedback: FeedbackOverride // per-channel inherit/on/off
     var label: String              // user-facing name shown in canvas + toast
 }
 
@@ -122,9 +126,8 @@ Profile switching runs on a parallel path: `NSWorkspace` activation notification
 
 | Context | What runs there | Why |
 |---|---|---|
-| MIDI receive (CoreMIDI thread) | MIDIEngine callback → DeviceLayer decode → hand off | Never block; decode is allocation-light |
-| `DispatcherQueue` (serial, high QoS) | Trigger detection, mapping resolution, ActionEngine dispatch | Ordering guarantees; single writer for trigger timers |
-| MainActor | All UI, FeedbackCenter panels, ProfileSwitcher (NSWorkspace) | AppKit/SwiftUI requirement |
+| MIDI receive (CoreMIDI thread) | MIDIEngine callback → hand off to MainActor | Never block; decode is allocation-light |
+| MainActor | Dispatcher (decode, trigger detection, resolution, ActionEngine fast path), all UI, ProfileSwitcher | v1 choice per [ADR-008](99-decisions.md#adr-008-dispatcher-runs-on-the-mainactor-v1) — measured dispatch cost is µs-scale; a dedicated serial queue remains a profiled optimization |
 | Background (`.utility`) | Shell/AppleScript/Shortcut executors | Unbounded latency must not block the hub (FR-31) |
 
 Continuous-control events are **coalesced** on DispatcherQueue: only the latest value per control per 8 ms tick reaches ActionEngine/FeedbackCenter (NFR-1, FR-41).

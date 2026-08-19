@@ -114,6 +114,12 @@ final class MIDIEngine: ObservableObject {
 
     // MARK: Connection state (FR-1, FR-4)
 
+    /// Forced re-validation, e.g. after system wake (docs/08 §3 — CoreMIDI
+    /// can renumber endpoints across sleep).
+    func revalidate() {
+        refreshConnection()
+    }
+
     private func refreshConnection() {
         guard let manager else {
             isConnected = false

@@ -72,3 +72,9 @@ Technical twin of D-002. **Decision.** Hardened Runtime on, App Sandbox off, no 
 **Context.** Volume has a public API (CoreAudio). Display brightness on Apple Silicon does **not** — apps like MonitorControl use private `DisplayServices` calls; the public-ish fallback is simulating brightness keys via NX system-defined events (coarse 16-step).
 **Decision.** Media/system keys (play/pause, brightness up/down, volume keys) via NX system-defined events. Smooth continuous volume via CoreAudio property APIs. Smooth continuous brightness via `DisplayServicesSetBrightness` (private, linked at runtime) with automatic fallback to stepped key events if unavailable.
 **Consequences.** Private-API usage is fine for direct distribution (D-002) but is an acknowledged breakage risk each macOS release; isolated in one executor with a fallback path and a release-time smoke-test task (M6).
+
+## ADR-008: Dispatcher runs on the MainActor (v1)
+
+**Context.** [02-architecture.md §4](02-architecture.md#4-threading-model) originally specified a dedicated serial `DispatcherQueue`. The build uses Swift approachable concurrency with default MainActor isolation; measured dispatch cost (decode → CGEvent post) is microseconds, and worst-case event rates (jog spins) are a few hundred Hz.
+**Decision.** v1 runs the Dispatcher, trigger machine, and ActionEngine fast path on the MainActor. The 8 ms continuous coalescer bounds per-frame work; subprocess actions already run off-main.
+**Consequences.** Massively simpler concurrency story; UI stalls could theoretically delay injections — accepted until profiling shows otherwise (NFR-1 signposts stay in place). Moving to a dedicated queue later only touches Dispatcher internals; the doc's threading table was updated in the same commit.

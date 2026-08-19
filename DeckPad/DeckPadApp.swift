@@ -34,8 +34,23 @@ enum WindowID {
 
 final class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ notification: Notification) {
+        // As the unit-test host, skip bootstrap entirely (the single-instance
+        // guard would otherwise kill the test runner when DeckPad is open).
+        let isTestHost = ProcessInfo.processInfo.environment.keys.contains { $0.hasPrefix("XCTest") }
+        guard !isTestHost else { return }
+
         ServiceController.shared.start()
         MIDIEngine.shared.start()
+        ProfileSwitcher.shared.start()
+        Dispatcher.shared.start()
+    }
+
+    func applicationShouldTerminate(_ sender: NSApplication) -> NSApplication.TerminateReply {
+        ServiceController.shared.confirmQuitIfNeeded()
+    }
+
+    func applicationWillTerminate(_ notification: Notification) {
+        MappingStore.shared.persistAll()
     }
 
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {

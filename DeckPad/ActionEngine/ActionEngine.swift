@@ -131,15 +131,26 @@ final class ActionEngine {
         case .sleepDisplays:
             return runAsync("/usr/bin/pmset", ["displaysleepnow"], label: "display sleep", completion: completion)
 
-        // Internal — real wiring in M3 (FR-32, FR-20…22)
-        case .switchProfile, .pinActiveProfile, .suspendDeckPad:
-            Self.log.info("internal action \(String(describing: action)) — wired in M3")
+        // Internal (FR-32, FR-20…22)
+        case let .switchProfile(name):
+            guard let profile = MappingStore.shared.profiles.first(where: { $0.name == name }) else {
+                return .failure("no profile named \(name)")
+            }
+            ProfileSwitcher.shared.pin(profile.id)
+            Dispatcher.shared.resetPickup()
+            return .success
+        case .pinActiveProfile:
+            let switcher = ProfileSwitcher.shared
+            switcher.pin(switcher.pinnedProfileID == nil ? switcher.activeProfile.id : nil)
+            return .success
+        case .suspendDeckPad:
+            Dispatcher.shared.isSuspended.toggle()
             return .success
         case .openDeckPad:
             ServiceController.shared.enterActiveUI()
             return .success
         case .toggleMIDIMonitor:
-            Self.log.info("toggleMIDIMonitor — wired in M3")
+            Self.log.info("toggleMIDIMonitor — needs openWindow environment; wired with M4 UI")
             return .success
         case .noOp:
             return .success
@@ -168,6 +179,11 @@ final class ActionEngine {
         default:
             Self.log.error("non-continuous action \(String(describing: action)) got a continuous value")
         }
+    }
+
+    /// Current system volume 0–1, for soft-takeover pickup (docs/06 §7).
+    func currentSystemVolume() -> Double? {
+        volumeControl.volume()
     }
 
     // MARK: - Relative actions (FR-12)
