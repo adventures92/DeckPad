@@ -39,14 +39,14 @@ final class ActionEngine {
         runner: ProcessRunning? = nil,
         volumeControl: VolumeControlling? = nil,
         brightnessControl: BrightnessControlling? = nil,
-        permissions: PermissionsManager = .shared,
+        permissions: PermissionsManager? = nil,
         trustCheck: @escaping () -> Bool = { AXIsProcessTrusted() }
     ) {
         self.poster = poster ?? SystemEventPoster()
         self.runner = runner ?? SubprocessRunner()
         self.volumeControl = volumeControl ?? CoreAudioVolume()
         self.brightnessControl = brightnessControl ?? DisplayServicesBrightness()
-        self.permissions = permissions
+        self.permissions = permissions ?? .shared
         self.trustCheck = trustCheck
     }
 

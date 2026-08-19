@@ -22,7 +22,7 @@
 - [x] Jog modes: scroll (axis/speed/natural), arrow stepper with tick accumulators, zoom, volume/brightness dials, custom-per-tick ([06 §8](../06-actions-catalog.md#8-jog--encoder-modes-fr-12))
 
 ### Quality
-- [ ] Latency: DemoBench logs per-action dispatch time + p50/p95 rollups (os_log `latency` category); measure on hardware during the demo run: p95 ≤ 50 ms (NFR-1) — record numbers in this file
+- [ ] Latency: DemoBench logs per-action dispatch time + writes samples to `/tmp/deckpad-latency.csv`; formal p95 measurement (NFR-1) **blocked**: rebuilding invalidated the ad-hoc-signature TCC grant, and re-granting Accessibility needs admin rights (IT ticket pending). Builds now sign with the stable personal-team identity (`V49KZKM5ZY`), so the next grant is **one-time-forever**. Demo run on 2026-08-19 (pre-rebuild) passed subjectively: typing/volume/scroll felt instant. Record p50/p95 here once IT grants.
 - [x] Failure propagation: `ActionResult` (success/failure/permissionMissing); async subprocess results via completion; Accessibility failures set the PermissionsManager flag (silent-failure ban, [07 §6](../07-feedback-system.md#6-rules--rate-limits-sanity-guarantees))
 - [x] Unit tests: 13 executor tests against mock poster/runner/volume/brightness incl. the brightness fallback path and permission-missing visibility
 

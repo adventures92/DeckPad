@@ -95,16 +95,26 @@ final class DemoBench: ObservableObject {
         }
     }
 
+    /// M2 measurement: samples also land in /tmp/deckpad-latency.csv so the
+    /// numbers can be read without log-stream admin rights. Removed with the
+    /// bench in M3.
+    private let latencyFilePath = "/tmp/deckpad-latency.csv"
+
     private func recordLatency(since start: ContinuousClock.Instant) {
         let elapsed = start.duration(to: .now)
         let micros = Double(elapsed.components.attoseconds) / 1e12 + Double(elapsed.components.seconds) * 1e6
         samplesMicroseconds.append(micros)
         Self.log.info("action dispatch \(micros, format: .fixed(precision: 1)) µs (decode→post, in-process)")
-        if samplesMicroseconds.count % 10 == 0 {
-            let sorted = samplesMicroseconds.sorted()
-            let p50 = sorted[sorted.count / 2]
-            let p95 = sorted[Int(Double(sorted.count) * 0.95).clamped(to: 0...(sorted.count - 1))]
-            Self.log.info("latency over \(sorted.count) actions: p50 \(p50, format: .fixed(precision: 1)) µs, p95 \(p95, format: .fixed(precision: 1)) µs")
+
+        let line = String(format: "%.1f\n", micros)
+        if let data = line.data(using: .utf8) {
+            if let handle = FileHandle(forWritingAtPath: latencyFilePath) {
+                handle.seekToEndOfFile()
+                handle.write(data)
+                try? handle.close()
+            } else {
+                FileManager.default.createFile(atPath: latencyFilePath, contents: data)
+            }
         }
     }
 }
