@@ -30,4 +30,8 @@ xcodebuild -project DeckPad.xcodeproj -scheme DeckPad test -skip-testing:DeckPad
 
 UI tests only run from Xcode — headless CLI runs fail with "Timed out while enabling automation mode" (TCC), so always skip `DeckPadUITests` in scripted runs. Testing hardware is Anand's own DDJ-FLX4; hardware-dependent tests must also run from the `flx4-capture.json` fixture (created in M1) so CI needs no device.
 
-Debug builds sign with Anand's personal team (`DEVELOPMENT_TEAM = V49KZKM5ZY`) so the Accessibility TCC grant survives rebuilds — never revert to ad-hoc signing (each ad-hoc rebuild invalidates the grant, and Anand is not an admin on this Mac; re-grants require IT).
+Debug builds sign with Anand's personal team (`DEVELOPMENT_TEAM = V49KZKM5ZY`) so the Accessibility TCC grant survives rebuilds — never revert to ad-hoc signing (each ad-hoc rebuild invalidates the grant).
+
+## Working with Anand on hardware verification
+
+Hardware-in-the-loop checks (LEDs, button captures, latency runs) follow this style: announce what's about to happen *before* triggering it; prefer steady persistent states over timed flashes (nothing to miss); one variable per step; collect confirmations as quick-select options rather than free text; use targeted CLI sniffers for small capture gaps instead of full re-capture walks.
